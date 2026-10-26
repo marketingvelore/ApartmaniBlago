@@ -1,0 +1,1174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartments Blago – Sutomore, Montenegro</title>
+<meta name="description" content="Apartments Blago in Sutomore, Montenegro: garden, mountain view, city beach 1.1 km away.">
+<meta name="theme-color" content="#0a2530">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* =====================================================================
+   Blago — editorial coastal design system
+   ===================================================================== */
+:root{
+  --ink:#0a2530;--ink-2:#12404d;--sea:#0f7088;--sea-2:#1a93ad;
+  --sand:#f4eee4;--sand-2:#e9dfce;--paper:#fbf8f2;--card:#fffdf9;
+  --gold:#f2a93b;--gold-2:#ffcf7a;--coral:#d9573a;
+  --text:#1a2b31;--muted:#5a6a6f;--line:#dccfb9;
+  --head:'Fraunces','Iowan Old Style','Palatino Linotype',Georgia,serif;
+  --body:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);--ease-io:cubic-bezier(.7,0,.2,1);
+  --r:clamp(18px,2.4vw,30px);
+  --gut:clamp(20px,5vw,64px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--body);color:var(--text);background:var(--paper);line-height:1.62;font-size:clamp(16px,1.05vw + 12px,18px);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);font-weight:500;line-height:1.02;margin:0;letter-spacing:-.025em;font-optical-sizing:auto}
+p{margin:0}
+.wrap{width:min(1220px,100% - var(--gut) * 2);margin-inline:auto}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:8px}
+::selection{background:var(--gold);color:#2b1d00}
+
+/* grain (static, free) */
+.grain::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.09;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ============ progress + floating actions ============ */
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--gold),var(--coral));z-index:96}
+.wa-float{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#1fa855;color:#fff;display:grid;place-items:center;z-index:60;box-shadow:0 12px 30px rgba(0,0,0,.28);transition:transform .3s var(--ease)}
+.wa-float:hover{transform:scale(1.1) rotate(-6deg)}
+.wa-float::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #1fa855;animation:waRing 2.4s ease-out infinite}
+@keyframes waRing{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.7);opacity:0}}
+.mbar{display:none}
+
+/* ============ header ============ */
+header.top{position:fixed;top:0;left:0;right:0;z-index:80;color:#fff;background:linear-gradient(rgba(5,22,30,.62),rgba(5,22,30,0));transition:background .35s,box-shadow .35s}
+header.top.s,body.menu-open header.top{background:rgba(8,32,42,.94);box-shadow:0 8px 28px rgba(0,0,0,.22)}
+body.menu-open header.top{box-shadow:none}
+.top .wrap{display:flex;align-items:center;gap:18px;height:78px;transition:height .35s var(--ease)}
+header.top.s .wrap{height:64px}
+.brand{position:relative;z-index:3;font-family:var(--head);font-weight:600;font-size:1.65rem;text-decoration:none;letter-spacing:-.03em;display:flex;align-items:center;gap:10px;line-height:1}
+.brand::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(242,169,59,.28);animation:pulse 3.4s ease-in-out infinite}
+.brand small{font-family:var(--body);font-weight:700;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;opacity:.7;margin-top:4px}
+nav.main{margin-left:auto;display:flex;gap:6px;z-index:1}
+nav.main a{position:relative;text-decoration:none;font-size:.95rem;padding:8px 14px;border-radius:999px;opacity:.85;transition:background .3s,opacity .3s}
+nav.main a:hover{background:rgba(255,255,255,.12);opacity:1}
+nav.main a[aria-current="page"]{opacity:1;background:rgba(255,255,255,.16)}
+.lang{position:relative;z-index:3;display:flex;border:1px solid rgba(255,255,255,.38);border-radius:999px;overflow:hidden}
+.lang button{all:unset;cursor:pointer;padding:6px 12px;font-size:.78rem;font-weight:700;letter-spacing:.04em;color:#fff;opacity:.75}
+.lang button[aria-pressed="true"]{background:#fff;color:var(--ink);opacity:1}
+.lang button:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+.menu-btn{all:unset;display:none;cursor:pointer;position:relative;z-index:3;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.14)}
+.menu-btn span{position:absolute;left:14px;right:14px;height:2px;border-radius:2px;background:#fff;transition:transform .4s var(--ease),top .4s var(--ease),opacity .2s}
+.menu-btn span:nth-child(1){top:18px}.menu-btn span:nth-child(2){top:26px}
+.menu-btn[aria-expanded="true"] span:nth-child(1){top:22px;transform:rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){top:22px;transform:rotate(-45deg)}
+.menu-btn:focus-visible{outline:3px solid var(--gold)}
+
+/* buttons */
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--gold);color:#2b1d00;text-decoration:none;border:0;border-radius:999px;padding:15px 28px;font:inherit;font-weight:700;font-size:.98rem;letter-spacing:.01em;cursor:pointer;text-align:center;transition:transform .35s var(--ease),box-shadow .35s,background .3s,translate .3s var(--ease);box-shadow:0 10px 24px rgba(242,169,59,.28)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(242,169,59,.4)}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.6) 50%,transparent 70%);transform:translateX(-130%)}
+.btn:hover::after{animation:shine .9s}
+.btn.sh::after{animation:shine 5s 2s infinite}
+@keyframes shine{to{transform:translateX(130%)}}
+.btn.small{padding:10px 20px;font-size:.9rem}
+.btn.line{background:transparent;color:var(--ink);border:1.5px solid var(--ink);box-shadow:none}
+.btn.line:hover{background:var(--ink);color:#fff;box-shadow:none}
+.btn.wa{background:#1fa855;color:#fff;box-shadow:0 10px 24px rgba(31,168,85,.28)}
+.btn.mail{background:var(--ink);color:#fff;box-shadow:none}
+.navbook{display:none}
+
+/* ============ hero ============ */
+.hero{
+  position:relative;display:grid;align-items:end;overflow:hidden;overflow:clip;color:#fff;background:#0a1c28;isolation:isolate;
+  min-height:min(100vh,960px);min-height:min(100svh,960px);
+  --x:84%;--y:86%;--so:1;--glow:0;--sung:rgba(255,214,150,.6);
+  --photo:brightness(.4) saturate(.7) sepia(0) hue-rotate(-10deg);
+}
+.hero[data-time="morning"]{--x:26%;--y:36%;--so:0;--glow:1;--sung:rgba(255,214,150,.65);--photo:brightness(.98) saturate(1.05) sepia(.12) hue-rotate(0deg)}
+.hero[data-time="noon"]{--x:52%;--y:14%;--so:0;--glow:.85;--sung:rgba(255,250,210,.5);--photo:brightness(1.04) saturate(1.15) sepia(0) hue-rotate(0deg)}
+.hero[data-time="evening"]{--x:76%;--y:44%;--so:.3;--glow:1;--sung:rgba(255,130,70,.7);--photo:brightness(.8) saturate(1.2) sepia(.3) hue-rotate(-8deg)}
+.hero[data-time="night"]{--so:1}
+.hbg{position:absolute;inset:0;z-index:-1;pointer-events:none;will-change:transform}
+.hphoto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:var(--photo);transition:filter 1.8s ease;animation:kb 28s ease-in-out infinite alternate;will-change:transform}
+@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.12) translate3d(-1.5%,-1%,0)}}
+.tint{position:absolute;inset:0;opacity:0;transition:opacity 1.8s ease}
+.tn{background:linear-gradient(rgba(4,10,40,.55),rgba(8,20,60,.5))}
+.tm{background:linear-gradient(rgba(255,196,140,.3),rgba(255,230,200,.06) 60%,transparent)}
+.td{background:linear-gradient(rgba(60,150,210,.16),transparent 70%)}
+.te{background:linear-gradient(rgba(190,70,70,.34),rgba(255,150,70,.26) 55%,rgba(30,30,90,.3))}
+.hero[data-time="night"] .tn,.hero[data-time="morning"] .tm,.hero[data-time="noon"] .td,.hero[data-time="evening"] .te{opacity:1}
+.lay{position:absolute;left:-40px;right:-40px;top:0;bottom:0}
+.p{translate:calc(var(--px,0) * var(--d,.5) * -34px) calc(var(--py,0) * var(--d,.5) * -16px);transition:translate .6s cubic-bezier(.2,.7,.2,1)}
+.glowl{opacity:var(--glow);transition:opacity 1.8s ease}
+.hsun{position:absolute;left:var(--x);top:var(--y);width:0;height:0;--sz:clamp(70px,9vw,120px);transition:left 2.6s cubic-bezier(.4,0,.2,1),top 2.6s cubic-bezier(.25,.8,.3,1)}
+.hsun i{position:absolute;left:0;top:0;border-radius:50%}
+.halo{width:calc(var(--sz) * 6);height:calc(var(--sz) * 6);margin:calc(var(--sz) * -3);background:radial-gradient(circle,var(--sung),transparent 62%)}
+.core{width:calc(var(--sz) * .8);height:calc(var(--sz) * .8);margin:calc(var(--sz) * -.4);background:radial-gradient(circle,#fff,rgba(255,244,200,.85) 45%,transparent 72%);animation:pulse 6s ease-in-out infinite}
+.srays{width:calc(var(--sz) * 6);height:calc(var(--sz) * 6);margin:calc(var(--sz) * -3);opacity:.2;background:repeating-conic-gradient(rgba(255,244,200,.9) 0 3deg,transparent 3deg 15deg);-webkit-mask-image:radial-gradient(circle,#000 8%,transparent 66%);mask-image:radial-gradient(circle,#000 8%,transparent 66%);animation:spin 90s linear infinite;will-change:transform}
+.starsw{position:absolute;inset:0;opacity:var(--so);transition:opacity 1.8s ease}
+.st{height:62%;bottom:auto;animation:tw 4s ease-in-out infinite}
+.st2{animation-delay:-2s;animation-duration:5.2s}
+.st svg{width:100%;height:100%}
+.hshoot{position:absolute;left:62%;top:12%;width:110px;height:2px;border-radius:2px;background:linear-gradient(90deg,transparent,#fff);opacity:0;rotate:28deg;animation:hshoot 11s linear infinite}
+@keyframes hshoot{0%,88%{transform:translate(0,0);opacity:0}90%{opacity:1}100%{transform:translate(-220px,120px);opacity:0}}
+@keyframes tw{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero:not([data-time="night"]):not([data-time="evening"]) .starsw *{animation-play-state:paused}
+.hero.off *{animation-play-state:paused!important}
+.scrim{position:absolute;inset:0;z-index:0;background:
+  linear-gradient(to top,rgba(6,24,32,.9) 0,rgba(6,24,32,.62) 32%,rgba(6,24,32,.1) 62%,rgba(6,24,32,0) 100%),
+  linear-gradient(to bottom,rgba(6,24,32,.5),rgba(6,24,32,0) 22%)}
+.hero-in{position:relative;z-index:2;padding:150px 0 clamp(96px,11vw,150px)}
+.hero h1{font-size:clamp(2.7rem,8.6vw,7.4rem);font-weight:500;max-width:11ch;line-height:.94;letter-spacing:-.04em;text-shadow:0 2px 34px rgba(0,0,0,.4)}
+.ln{display:block;overflow:hidden;padding:.06em .04em .12em 0;margin-bottom:-.1em}
+.ln>span{display:block;animation:lineUp 1.2s var(--ease) both}
+.ln:nth-child(2)>span{animation-delay:.2s;font-style:italic;font-weight:400;color:var(--gold-2)}
+.hero .sub{font-size:clamp(1.02rem,1.6vw,1.3rem);max-width:42ch;margin-top:22px;color:#eef6f6;animation:fadeUp 1s .6s var(--ease) both;text-shadow:0 1px 14px rgba(0,0,0,.45)}
+.time{position:absolute;z-index:3;top:96px;right:max(var(--gut),calc((100% - 1220px) / 2));display:flex;gap:2px;background:rgba(8,32,42,.55);padding:4px;border-radius:999px;border:1px solid rgba(255,255,255,.14);animation:fadeUp 1s .35s var(--ease) both}
+.time button{all:unset;cursor:pointer;padding:7px 15px;border-radius:999px;font-size:.84rem;font-weight:700;color:#fff;transition:background .3s,color .3s}
+.time button:hover{background:rgba(255,255,255,.18)}
+.time button[aria-pressed="true"]{background:#fff;color:var(--ink)}
+.time button:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+.badge{position:absolute;z-index:3;right:max(var(--gut),calc((100% - 1220px) / 2));bottom:clamp(120px,14vw,190px);width:clamp(118px,11vw,150px);aspect-ratio:1;color:#fff;animation:fadeIn 1.2s 1s both}
+.badge svg{width:100%;height:100%;animation:spin 26s linear infinite;overflow:visible}
+.badge text{font:700 10.6px var(--body);letter-spacing:.2em;text-transform:uppercase;fill:currentColor}
+.badge::after{content:"";position:absolute;inset:34%;border-radius:50%;background:var(--gold) radial-gradient(circle at 50% 50%,#fff 0 18%,transparent 19%);box-shadow:0 0 0 6px rgba(242,169,59,.25);animation:pulse 3.4s ease-in-out infinite}
+.cue{position:absolute;z-index:3;left:50%;bottom:22px;width:22px;height:38px;margin-left:-11px;border:2px solid rgba(255,255,255,.6);border-radius:14px;opacity:.8}
+.cue::after{content:"";position:absolute;left:50%;top:7px;width:4px;height:8px;margin-left:-2px;border-radius:3px;background:#fff;animation:cue 1.8s ease-in-out infinite}
+@keyframes cue{0%{transform:translateY(0);opacity:1}70%{transform:translateY(12px);opacity:0}100%{opacity:0}}
+.bar{margin-top:clamp(28px,4vw,44px);background:rgba(255,253,249,.97);color:var(--text);border-radius:24px;padding:12px;display:grid;grid-template-columns:1fr 1fr 130px auto;gap:0;align-items:stretch;box-shadow:0 30px 70px rgba(0,0,0,.34);animation:fadeUp 1s .85s var(--ease) both;max-width:1000px}
+.bar .field{padding:8px 18px;border-right:1px solid var(--line);justify-content:center}
+.bar .field:nth-child(3){border-right:0}
+.bar .btn{margin-left:10px;padding:0 30px;min-height:56px;align-self:center;border-radius:16px}
+.bar.ping{animation:ping 1.2s var(--ease)}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(242,169,59,.95),0 30px 70px rgba(0,0,0,.34)}100%{box-shadow:0 0 0 30px rgba(242,169,59,0),0 30px 70px rgba(0,0,0,.34)}}
+.field{display:flex;flex-direction:column;gap:3px;min-width:0}
+.field label{font-size:.68rem;font-weight:700;color:var(--muted);letter-spacing:.14em;text-transform:uppercase}
+.field input,.field select,.field textarea{font:inherit;font-size:1rem;color:var(--text);background:transparent;border:0;padding:2px 0;width:100%;min-width:0;border-radius:0}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none}
+.field select{appearance:none;-webkit-appearance:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%235a6a6f' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E") right 2px center no-repeat}
+.bar .field:focus-within{background:var(--sand);border-radius:14px}
+
+/* ============ sections ============ */
+section{padding:clamp(64px,10vw,132px) 0;position:relative}
+.kick{display:inline-flex;align-items:center;gap:12px;font-size:.78rem;color:var(--sea);font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:18px}
+.kick::before{content:"";width:34px;height:2px;background:currentColor;border-radius:2px}
+h2{font-size:clamp(2.1rem,5.2vw,4rem);max-width:17ch}
+h2 em,.w.last{font-style:italic;font-weight:400;color:var(--coral)}
+.dark h2 .w.last,.cta h2 .w.last{color:var(--gold-2)}
+.lead{margin-top:18px;color:var(--muted);max-width:54ch;font-size:1.08rem}
+
+/* facts */
+.facts{padding:0;position:relative;z-index:4;margin-top:clamp(-86px,-7vw,-48px)}
+.facts ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);border-radius:var(--r);box-shadow:0 30px 70px rgba(10,37,48,.16);overflow:hidden}
+.facts li{padding:clamp(22px,2.6vw,36px) clamp(18px,2.4vw,32px);border-right:1px solid var(--line);transition:background .35s}
+.facts li:hover{background:var(--sand)}
+.facts li:last-child{border-right:0}
+.facts b{display:block;font-family:var(--head);font-size:clamp(1.9rem,3.8vw,3rem);font-weight:500;color:var(--ink);letter-spacing:-.04em;line-height:1.05}
+.facts b .count{color:var(--coral)}
+.facts span.s{display:block;margin-top:6px;color:var(--muted);font-size:.92rem;line-height:1.4}
+
+/* marquee */
+.mq{overflow:hidden;padding:clamp(34px,6vw,76px) 0 clamp(10px,2vw,24px)}
+.mq-t{display:flex;width:max-content;animation:marq 52s linear infinite}
+.mq:hover .mq-t{animation-play-state:paused}
+.mq-t span{font:500 clamp(3rem,9vw,7rem)/1 var(--head);letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.4px var(--ink);white-space:nowrap}
+.mq-t span:nth-of-type(even){color:var(--ink);-webkit-text-stroke:0;font-style:italic}
+.sunsep{flex:none;width:clamp(16px,2vw,26px);height:clamp(16px,2vw,26px);border-radius:50%;background:var(--gold);align-self:center;margin:0 clamp(22px,3.6vw,54px);box-shadow:0 0 0 7px rgba(242,169,59,.22);animation:pulse 3s ease-in-out infinite}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* dark panels */
+.dark{background:var(--ink);color:#fff;position:relative;overflow:hidden;border-radius:var(--r);margin:0 clamp(8px,1.6vw,22px)}
+.dark::after{content:"";position:absolute;right:-12%;top:-30%;width:60vw;height:60vw;max-width:760px;max-height:760px;border-radius:50%;background:radial-gradient(circle,rgba(242,169,59,.16),transparent 64%);pointer-events:none}
+.dark .wrap{position:relative;z-index:2}
+.dark .kick{color:var(--gold)}
+.dark .lead{color:#b9d3d9}
+.rings{position:absolute;right:-120px;top:50%;width:520px;height:520px;margin-top:-260px;pointer-events:none}
+.rings i{position:absolute;inset:0;border:1.5px solid rgba(255,255,255,.12);border-radius:50%;animation:ripple 7s linear infinite}
+.rings i:nth-child(2){animation-delay:-2.3s}.rings i:nth-child(3){animation-delay:-4.6s}
+@keyframes ripple{0%{transform:scale(.25);opacity:.7}100%{transform:scale(1.6);opacity:0}}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.6vw,34px);margin-top:clamp(36px,5vw,64px);counter-reset:n}
+.three>div{position:relative;counter-increment:n;padding:clamp(24px,2.6vw,34px);border-radius:calc(var(--r) * .8);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);transition:transform .5s var(--ease),background .4s,border-color .4s}
+.three>div:hover{transform:translateY(-8px);background:rgba(255,255,255,.09);border-color:rgba(242,169,59,.5)}
+.three>div::before{content:"0" counter(n);position:absolute;right:22px;top:12px;font:500 clamp(3.4rem,5vw,4.6rem)/1 var(--head);color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.22);font-style:italic}
+.three h3{font-size:1.5rem;font-weight:500;margin-bottom:10px;letter-spacing:-.01em}
+.three p{color:var(--muted);font-size:1rem}
+.dark .three p{color:#b9d3d9}
+.ico{width:58px;height:58px;border-radius:50%;background:rgba(242,169,59,.14);display:grid;place-items:center;margin-bottom:22px;color:var(--gold);transition:transform .5s var(--ease),background .3s}
+.three>div:hover .ico{transform:rotate(-10deg) scale(1.1);background:rgba(242,169,59,.28)}
+.ico .dot{animation:tw 1.2s ease-in-out infinite}.ico .dot:nth-child(2){animation-delay:.2s}.ico .dot:nth-child(3){animation-delay:.4s}
+.ico .tick{stroke-dasharray:24;stroke-dashoffset:24}
+.in .ico .tick,.ico.in .tick{animation:draw 1s .5s var(--ease) forwards}
+.ico .needle{transform-box:fill-box;transform-origin:center;animation:swing 4s ease-in-out infinite alternate}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes swing{from{transform:rotate(-40deg)}to{transform:rotate(50deg)}}
+
+/* photos */
+.art{position:relative;overflow:hidden;background:linear-gradient(135deg,#cfe0e2,#a9c6cc)}
+.art img{width:100%;height:100%;display:block;object-fit:cover;transition:transform 1.2s var(--ease)}
+.zoom:hover .art img{transform:scale(1.07)}
+.xf{aspect-ratio:4/3;position:relative}
+.xf>.art{position:absolute;inset:0}
+.xf>.art:first-child{animation:xfa 9s ease-in-out infinite}
+.xf>.art:last-child{animation:xfb 9s ease-in-out infinite}
+@keyframes xfa{0%,40%{opacity:1}52%,92%{opacity:0}100%{opacity:1}}
+@keyframes xfb{0%,40%{opacity:0}52%,92%{opacity:1}100%{opacity:0}}
+.idx{position:absolute;z-index:2;left:16px;top:16px;font:600 .8rem var(--body);letter-spacing:.14em;color:#fff;background:rgba(8,32,42,.55);padding:6px 13px;border-radius:999px;border:1px solid rgba(255,255,255,.25)}
+
+/* apartment bento (home) */
+.cards{display:grid;grid-template-columns:1.12fr 1fr;grid-template-rows:auto auto;gap:clamp(16px,2vw,28px);margin-top:clamp(34px,5vw,60px)}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--ty,0px));transition:transform .5s var(--ease),box-shadow .5s}
+.card.hv{--ty:-8px;box-shadow:0 34px 60px rgba(10,37,48,.18);transition:transform .12s linear,box-shadow .5s}
+.card:first-child{grid-row:span 2}
+.card:first-child .xf{aspect-ratio:auto;flex:1;min-height:340px}
+.card:not(:first-child){flex-direction:row}
+.card:not(:first-child) .xf{aspect-ratio:auto;flex:0 0 42%;min-height:230px}
+.card .body{padding:clamp(20px,2.4vw,30px);display:flex;flex-direction:column;gap:12px;flex:1;min-width:0}
+.card h3{font-size:clamp(1.5rem,2.2vw,2rem)}
+.card p{color:var(--muted);font-size:.98rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.chips span{font-size:.78rem;background:var(--sand);color:var(--ink-2);padding:5px 12px;border-radius:999px;font-weight:500}
+.foot-row{display:flex;justify-content:space-between;align-items:center;gap:10px;border-top:1px solid var(--line);padding-top:14px;margin-top:4px;font-size:.9rem;color:var(--muted);flex-wrap:wrap}
+.foot-row a:not(.btn){color:var(--ink);font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.foot-row a:not(.btn)::after{content:"→";transition:transform .35s var(--ease);color:var(--coral)}
+.foot-row a:not(.btn):hover::after{transform:translateX(6px)}
+.more{margin-top:clamp(26px,3.4vw,44px)}
+
+/* apartment rows (page) */
+.apt{position:relative;display:grid;grid-template-columns:1.12fr 1fr;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-top:clamp(20px,2.6vw,34px)}
+.apt:first-child{margin-top:0}
+.apt .xf{aspect-ratio:auto;min-height:clamp(300px,34vw,460px)}
+.apt:nth-child(even) .xf{order:2}
+.apt .info{padding:clamp(26px,4.4vw,60px);display:flex;flex-direction:column;gap:16px;justify-content:center}
+.apt h2{font-size:clamp(1.9rem,3.4vw,2.8rem);max-width:none}
+.apt p{color:var(--muted);font-size:1.04rem}
+.apt .foot-row{margin-top:12px}
+
+/* timeline */
+.day{background:var(--sand)}
+.tl{list-style:none;margin:clamp(36px,5vw,64px) 0 0;padding:0}
+.tl li{display:grid;grid-template-columns:140px 1fr minmax(220px,360px);gap:22px 34px;padding:0 0 clamp(36px,4.4vw,60px);position:relative;align-items:center}
+.tl li::before{content:"";position:absolute;left:151px;top:14px;bottom:-30px;width:2px;background:var(--line)}
+.tl li:last-child::before{display:none}
+.tl li::after{content:"";position:absolute;left:145px;top:10px;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--sand);box-shadow:0 0 0 2px var(--gold);animation:pulse 3s ease-in-out infinite}
+.tl .t{font:italic 500 1.5rem var(--head);color:var(--coral);align-self:start}
+.tl .c{padding-left:34px;align-self:start}
+.tl h3{font-size:clamp(1.5rem,2.4vw,2.1rem);margin-bottom:6px}
+.tl p{color:var(--muted)}
+.tile{border-radius:calc(var(--r) * .7);overflow:hidden;aspect-ratio:4/3;box-shadow:0 20px 44px rgba(10,37,48,.14)}
+.tile .art{height:100%}
+
+/* split */
+.split{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(36px,7vw,100px);align-items:center}
+.split .txt p{color:var(--muted);font-size:1.08rem;max-width:56ch}
+.split .txt p+p{margin-top:16px}
+.split .txt h2{margin-bottom:26px}
+.pics{position:relative;padding-bottom:14%}
+.pic{border-radius:var(--r);overflow:hidden;background:var(--sand-2);aspect-ratio:4/4.4;box-shadow:0 30px 60px rgba(10,37,48,.18)}
+.pic .art{height:100%}
+.pic .art img{height:116%;margin-top:-8%;will-change:transform}
+.pic.sm{position:absolute;right:-5%;bottom:0;width:50%;aspect-ratio:4/3.4;border:7px solid var(--paper);animation:floaty 7s ease-in-out infinite}
+.pic.sm .art img{height:100%;margin:0}
+.split.rev .pics{order:-1}
+.light{background:#fff}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+/* around */
+.rcs{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,28px);margin-top:clamp(34px,5vw,56px)}
+.rc{position:relative;border-radius:var(--r);overflow:hidden;background:var(--card);border:1px solid var(--line);transition:transform .5s var(--ease),box-shadow .5s}
+.rc:hover{transform:translateY(-8px);box-shadow:0 30px 54px rgba(10,37,48,.16)}
+.rc .art{aspect-ratio:4/4.2}
+.rc-km{position:absolute;top:16px;right:16px;background:var(--gold);color:#2b1d00;font:700 1.05rem var(--body);padding:7px 15px;border-radius:999px;box-shadow:0 8px 20px rgba(0,0,0,.2)}
+.rc-b{padding:20px 22px 24px}
+.rc-b h3{font-size:1.5rem}
+.rc-b p{color:var(--muted);font-size:.96rem;margin-top:4px}
+.air{margin-top:clamp(16px,2vw,28px);position:relative;overflow:hidden;background:var(--ink);color:#fff;border-radius:var(--r);padding:clamp(24px,3vw,36px) clamp(22px,4vw,44px);display:flex;align-items:center;gap:8px 24px;flex-wrap:wrap}
+.air h3{font-size:1.55rem}
+.air p{color:#b9d3d9;font-size:.96rem}
+.air .km{margin-left:auto;font:italic 500 clamp(1.8rem,3vw,2.4rem) var(--head);color:var(--gold-2);letter-spacing:-.02em}
+.air .trail{position:absolute;left:0;right:0;top:22px;border-top:2px dashed rgba(255,255,255,.18)}
+.air .plane{position:absolute;left:0;top:9px;animation:planeFly 12s linear infinite;color:#fff}
+@keyframes planeFly{from{transform:translateX(-90px)}to{transform:translateX(1500px)}}
+.air>div{position:relative;margin-top:16px}
+
+/* cta */
+.cta{background:var(--sea);color:#fff;padding:clamp(54px,8vw,104px) 0;position:relative;overflow:hidden;border-radius:var(--r);margin:clamp(40px,6vw,90px) clamp(8px,1.6vw,22px) 0;isolation:isolate}
+.cta::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(900px 400px at 85% 0,rgba(242,169,59,.5),transparent 60%),linear-gradient(135deg,#0f7088,#0a4a5e)}
+.cta .wrap{display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between;position:relative;z-index:1}
+.cta h2{max-width:14ch;font-size:clamp(2.2rem,5.6vw,4.4rem)}
+.cta p{color:#d9eef2;margin-top:14px;font-size:1.1rem}
+.cta .rings{right:6%;margin-top:-260px}
+.cta .rings i{border-color:rgba(255,255,255,.2)}
+.cta .btn{padding:18px 36px;font-size:1.05rem}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:116px;gap:clamp(12px,1.6vw,20px);grid-auto-flow:dense}
+.gi{all:unset;box-sizing:border-box;cursor:zoom-in;position:relative;border-radius:calc(var(--r) * .75);overflow:hidden;display:block;grid-row:span var(--r,3);box-shadow:0 14px 30px rgba(10,37,48,.12)}
+.gi:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.gi .art{position:absolute;inset:0}
+.gi::after{content:"+";position:absolute;right:14px;top:14px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.92);color:var(--ink);display:grid;place-items:center;font:500 1.5rem/1 var(--body);transform:scale(0);transition:transform .4s var(--ease)}
+.gi:hover::after,.gi:focus-visible::after{transform:scale(1)}
+.gcap{position:absolute;left:0;right:0;bottom:0;padding:44px 18px 16px;color:#fff;font:italic 500 1.15rem var(--head);background:linear-gradient(to top,rgba(6,24,32,.82),transparent);transform:translateY(100%);transition:transform .5s var(--ease)}
+.gi:hover .gcap,.gi:focus-visible .gcap{transform:none}
+@media(hover:none){.gcap{transform:none}}
+.lb{position:fixed;inset:0;background:rgba(4,16,22,.95);z-index:100;display:grid;place-items:center;padding:20px;animation:fadeIn .3s}
+.lb[hidden]{display:none}
+.lb-stage{width:min(92vw,1100px);aspect-ratio:3/2;max-height:78vh;border-radius:calc(var(--r) * .7);overflow:hidden;animation:zoomIn .5s var(--ease);box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.lb-stage .art{width:100%;height:100%}
+.lb-cap{color:#fff;text-align:center;margin-top:18px;font:italic 500 1.3rem var(--head)}
+.lb button{all:unset;cursor:pointer;position:absolute;width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;display:grid;place-items:center;font-size:1.7rem;transition:background .25s,transform .25s}
+.lb button:hover{background:rgba(255,255,255,.28);transform:scale(1.08)}
+.lb button:focus-visible{outline:3px solid var(--gold)}
+.lb .lb-x{top:18px;right:18px}.lb .lb-p{left:16px;top:50%;margin-top:-26px}.lb .lb-n{right:16px;top:50%;margin-top:-26px}
+.lb-in{display:flex;flex-direction:column;align-items:center}
+
+/* contact */
+.cgrid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(28px,6vw,90px);align-items:start}
+.details{margin-top:32px;display:grid;gap:22px}
+.details dt{font-size:.72rem;color:var(--muted);font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.details dd{margin:4px 0 0}
+.details a{text-decoration:none;font:500 clamp(1.4rem,2.6vw,1.9rem) var(--head);color:var(--ink);background:linear-gradient(currentColor,currentColor) 0 100%/0 2px no-repeat;transition:background-size .4s var(--ease)}
+.details a:hover{background-size:100% 2px}
+.side-art{margin-top:34px;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;max-width:460px;box-shadow:0 24px 54px rgba(10,37,48,.16)}
+.side-art .art{height:100%}
+.form{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:clamp(22px,3vw,40px);display:grid;gap:20px;box-shadow:0 30px 64px rgba(10,37,48,.1)}
+.form .two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.form .field input,.form .field select,.form .field textarea{border-bottom:1.5px solid var(--line);padding:9px 0;transition:border-color .3s}
+.form .field input:focus,.form .field select:focus,.form .field textarea:focus{border-bottom-color:var(--coral)}
+.form .field textarea{resize:vertical;min-height:88px}
+.form .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.form .btn{flex:1 1 190px}
+.apt-pick{font-size:.92rem;background:var(--sand);border-radius:14px;padding:11px 16px;color:var(--ink-2);display:none}
+.apt-pick.on{display:block;animation:fadeUp .5s var(--ease)}
+.map{background:var(--sand);border-radius:var(--r);margin:0 clamp(8px,1.6vw,22px)}
+.map-box{margin-top:34px;border-radius:var(--r);overflow:hidden;background:#fff;box-shadow:0 24px 54px rgba(10,37,48,.12)}
+.map-box iframe{display:block;width:100%;height:min(480px,62vh);border:0}
+.map-act{margin-top:22px}
+
+/* footer */
+footer{background:var(--ink);color:#9fbcc2;padding:clamp(48px,7vw,90px) 0 26px;font-size:.94rem;margin-top:clamp(40px,6vw,90px);position:relative;overflow:hidden}
+footer .wrap{display:grid;gap:26px;position:relative;z-index:1}
+footer .fr{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;align-items:center}
+footer .brand{color:#fff}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 24px}
+footer nav a{text-decoration:none;transition:color .3s}
+footer nav a:hover{color:var(--gold-2)}
+footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:.85rem}
+.mega{font:italic 500 clamp(7rem,28vw,24rem)/.8 var(--head);letter-spacing:-.06em;text-align:center;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.16);margin:clamp(10px,3vw,40px) 0 -.04em;user-select:none;white-space:nowrap}
+
+/* ============ page head ============ */
+.page-head{background:var(--ink);color:#fff;padding:clamp(130px,17vw,200px) 0 clamp(86px,11vw,150px);position:relative;overflow:hidden}
+.page-head::before{content:"";position:absolute;right:8%;top:-80px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(242,169,59,.4),transparent 65%);animation:floaty 9s ease-in-out infinite;z-index:2}
+.page-head::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,37,48,.97),rgba(10,37,48,.78) 55%,rgba(10,37,48,.4))}
+.page-head .wrap{position:relative;z-index:3}
+.page-head .wave{z-index:4}
+.page-head h1{font-size:clamp(3rem,9vw,7rem);font-weight:500;letter-spacing:-.04em;line-height:.95}
+.page-head h1 .w.last{font-style:italic;color:var(--gold-2)}
+.page-head .lead{color:#c3dade;margin-top:22px;animation:fadeUp .9s .55s var(--ease) both}
+.ph-n{position:absolute;z-index:3;right:max(var(--gut),calc((100% - 1220px) / 2));bottom:clamp(40px,7vw,90px);font:italic 500 clamp(6rem,17vw,15rem)/.8 var(--head);letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.4);animation:fadeUp 1.2s .5s var(--ease) both;pointer-events:none}
+.ph-bg{position:absolute;inset:0;overflow:hidden}
+.ph-bg img{width:100%;height:100%;object-fit:cover;animation:kb 24s ease-out both}
+.ph-apartments .ph-bg{animation:wipeL 1.1s .1s var(--ease) both}
+.ph-gallery .ph-bg{animation:iris 1.3s .1s var(--ease) both}
+.ph-about .ph-bg{animation:wipeU 1.1s .1s var(--ease) both}
+.ph-contact .ph-bg{animation:wipeR 1.1s .1s var(--ease) both}
+@keyframes wipeL{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0)}}
+@keyframes wipeR{from{clip-path:inset(0 0 0 100%)}to{clip-path:inset(0)}}
+@keyframes wipeU{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0)}}
+@keyframes iris{from{clip-path:circle(0% at 82% 50%)}to{clip-path:circle(150% at 82% 50%)}}
+.wave{position:absolute;left:0;right:0;bottom:-1px;height:clamp(30px,5vw,70px);overflow:hidden;line-height:0;pointer-events:none}
+.wave>div{position:absolute;left:0;bottom:0;width:200%;height:100%;animation:wvA 18s linear infinite;will-change:transform}
+.wave>div svg{width:100%;height:100%}
+.wave .w1{opacity:.4;animation-duration:26s;animation-direction:reverse}
+@keyframes wvA{to{transform:translateX(-50%)}}
+
+/* ============ motion ============ */
+@keyframes fadeUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes zoomIn{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
+@keyframes lineUp{from{transform:translateY(112%)}to{transform:none}}
+@keyframes wordUp{from{transform:translateY(112%) rotate(3deg)}to{transform:none}}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding:.06em .02em .14em;margin:-.06em -.02em -.14em}
+.w>span{display:inline-block;transform:translateY(112%) rotate(3deg);transition:transform 1s var(--ease);transition-delay:calc(var(--i) * .06s)}
+.rv.in [data-split] .w>span,[data-split].rv.in .w>span{transform:none}
+.page-head [data-split] .w>span{transform:none;animation:wordUp 1.1s var(--ease) both;animation-delay:calc(.3s + var(--i) * .08s);transition:none}
+[data-split].rv{opacity:1!important;translate:none!important;scale:none!important}
+.js .rv{opacity:0;translate:0 38px;transition:opacity 1s var(--ease) var(--d,0s),translate 1s var(--ease) var(--d,0s),scale 1s var(--ease) var(--d,0s)}
+.js .rv.l{translate:-52px 0}
+.js .rv.r{translate:52px 0}
+.js .rv.z{translate:0 0;scale:.93}
+.js .rv.in{opacity:1;translate:none;scale:none}
+.js .rv.card,.js .rv.rc{transition:opacity 1s var(--ease) var(--d,0s),translate 1s var(--ease) var(--d,0s),scale 1s var(--ease) var(--d,0s),transform .5s var(--ease),box-shadow .5s}
+.js .rv.card.hv{transition:opacity 1s var(--ease) var(--d,0s),translate 1s var(--ease) var(--d,0s),transform .12s linear,box-shadow .5s}
+
+/* page transition curtain */
+.pt{position:fixed;inset:0;z-index:95;display:flex;visibility:hidden;pointer-events:none}
+.pt i{flex:1;margin-right:-1px;background:var(--ink);transform:scaleY(0);transform-origin:50% 100%;will-change:transform}
+.pt i:nth-child(odd){background:#0e3340}
+.pt.cover,.pt.reveal{visibility:visible;pointer-events:all}
+.pt.cover i{transform:scaleY(1);transition:transform .38s var(--ease-io) calc(var(--i) * .035s)}
+.pt.reveal i{transform:scaleY(0);transform-origin:50% 0;transition:transform .42s var(--ease-io) calc(var(--i) * .035s)}
+.pt-brand{position:absolute;left:50%;top:50%;translate:-50% -50%;font:italic 500 clamp(2.8rem,10vw,6rem) var(--head);letter-spacing:-.04em;color:#fff;opacity:0}
+.pt.cover .pt-brand{opacity:1;transition:opacity .22s .2s}
+.pt.reveal .pt-brand{opacity:0;transition:opacity .18s}
+
+/* ============ responsive ============ */
+@media(max-width:1100px){
+  .bar{grid-template-columns:1fr 1fr 110px auto}
+  .tl li{grid-template-columns:110px 1fr minmax(200px,300px)}
+  .tl li::before{left:121px}.tl li::after{left:115px}
+}
+@media(max-width:1000px){
+  .menu-btn{display:block;order:3}
+  .top .wrap{gap:12px;height:68px}
+  header.top.s .wrap{height:60px}
+  .lang{margin-left:auto}
+  .top .btn.small{padding:9px 16px;font-size:.86rem}
+  nav.main{position:fixed;inset:0;margin:0;background:var(--ink);flex-direction:column;gap:2px;padding:104px var(--gut) 120px;overflow:auto;visibility:hidden;opacity:0;transform:translateY(-14px);transition:opacity .4s,transform .5s var(--ease),visibility 0s .5s}
+  nav.main.open{visibility:visible;opacity:1;transform:none;transition:opacity .4s,transform .5s var(--ease),visibility 0s}
+  nav.main a{font:500 clamp(2rem,8vw,3rem) var(--head);letter-spacing:-.03em;padding:14px 4px;border-radius:0;border-bottom:1px solid rgba(255,255,255,.1);opacity:0;transform:translateY(24px)}
+  nav.main.open a{animation:linkIn .7s var(--ease) both;opacity:1}
+  nav.main.open a:nth-child(1){animation-delay:.08s}nav.main.open a:nth-child(2){animation-delay:.14s}nav.main.open a:nth-child(3){animation-delay:.2s}nav.main.open a:nth-child(4){animation-delay:.26s}nav.main.open a:nth-child(5){animation-delay:.32s}nav.main.open a:nth-child(6){animation-delay:.4s}
+  nav.main a:hover,nav.main a[aria-current="page"]{background:none;color:var(--gold-2);font-style:italic}
+  nav.main .navbook{display:block;margin-top:26px;border:0;background:var(--gold);color:#2b1d00;font:700 1.05rem var(--body);text-align:center;border-radius:999px;padding:17px}
+  nav.main .navbook:hover{color:#2b1d00;font-style:normal;background:var(--gold)}
+  .time{top:84px}
+  .tl li{grid-template-columns:100px 1fr;}
+  .tl li .tile{grid-column:2;max-width:380px}
+  .cards{grid-template-columns:1fr 1fr}
+  .card:first-child{grid-column:1/-1;grid-row:auto}
+  .card:first-child .xf{min-height:0;aspect-ratio:16/10;flex:none}
+  .card:not(:first-child){flex-direction:column}
+  .card:not(:first-child) .xf{flex:none;aspect-ratio:4/3;min-height:0}
+  .badge{display:none}
+}
+@keyframes linkIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@media(min-width:521px) and (max-width:1000px){nav.main .navbook{display:none}}
+@media(max-width:520px){.top .hbook{display:none}}
+@media(max-width:860px){
+  .split{grid-template-columns:1fr}
+  .split.rev .pics{order:0}
+  .pic{aspect-ratio:4/3.2}
+  .pic.sm{right:0}
+  .cgrid{grid-template-columns:1fr}
+  .apt{grid-template-columns:1fr}
+  .apt .xf{min-height:0;aspect-ratio:4/3}
+  .apt:nth-child(even) .xf{order:0}
+  .three{grid-template-columns:1fr}
+  .rings{right:-260px}
+  .rcs{grid-template-columns:1fr 1fr}
+  .rc .art{aspect-ratio:4/3}
+  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:92px}
+}
+@media(max-width:760px){
+  .hero{min-height:max(100svh,700px)}
+  .hero-in{padding-top:128px;padding-bottom:62px}
+  .hero h1{font-size:clamp(2.9rem,14.4vw,4.4rem);max-width:9ch}
+  .time{left:var(--gut);right:auto;top:76px}
+  .scrim{background:linear-gradient(to top,rgba(6,24,32,.94) 0,rgba(6,24,32,.8) 46%,rgba(6,24,32,.45) 72%,rgba(6,24,32,.25) 100%)}
+  .hero{--y:30%}.hero[data-time="morning"]{--x:68%;--y:24%}.hero[data-time="noon"]{--x:50%;--y:14%}.hero[data-time="evening"]{--x:72%;--y:38%}.hero[data-time="night"]{--y:86%}
+  .bar{grid-template-columns:1fr 1fr;padding:8px;border-radius:22px;margin-top:26px}
+  .bar .field{padding:9px 12px}
+  .bar .field:nth-child(2){border-right:0}
+  .bar .field:nth-child(1),.bar .field:nth-child(2){border-bottom:1px solid var(--line)}
+  .bar .field.g{grid-column:1/2;border-right:1px solid var(--line)}
+  .bar .btn{grid-column:2/3;margin:0;padding:0 14px;min-height:54px;border-radius:14px;font-size:.95rem}
+  .cue{display:none}
+  .facts{margin-top:-40px}
+  .facts ul{grid-template-columns:1fr 1fr}
+  .facts li{border-bottom:1px solid var(--line)}
+  .facts li:nth-child(2){border-right:0}
+  .facts li:nth-child(n+3){border-bottom:0}
+  .mq-t span{-webkit-text-stroke-width:1.2px}
+  .dark,.cta,.map{margin-inline:8px}
+  /* swipeable apartment cards */
+  .cards{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-inline:calc(var(--gut) * -1);padding:6px var(--gut) 26px;scrollbar-width:none}
+  .cards::-webkit-scrollbar{display:none}
+  .card,.card:first-child,.card:not(:first-child){flex:0 0 84%;scroll-snap-align:center;flex-direction:column}
+  .card .xf,.card:first-child .xf,.card:not(:first-child) .xf{aspect-ratio:4/3.1;min-height:0;flex:none}
+  .page-head{padding-top:118px}
+  .page-head h1{font-size:clamp(3rem,15vw,4.6rem)}
+  .ph-n{font-size:5.2rem;bottom:auto;top:96px;right:var(--gut);opacity:.35;-webkit-text-stroke-width:1px}
+  .page-head .lead{max-width:88%}
+  .tl li{grid-template-columns:1fr;gap:6px;padding-left:34px;padding-bottom:40px}
+  .tl li::before{left:6px}.tl li::after{left:0}
+  .tl .c{padding-left:0}
+  .tl li .tile{grid-column:1;margin-top:12px;max-width:none}
+  .tl .t{font-size:1.2rem}
+  .gal{grid-auto-rows:78px;gap:10px}
+  .rcs{grid-template-columns:1fr}
+  .air .km{margin-left:0}
+  .wa-float{display:none}
+  .mbar{position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:75;display:flex;gap:10px;padding:8px;border-radius:999px;background:rgba(8,32,42,.9);box-shadow:0 14px 40px rgba(0,0,0,.4);transition:transform .5s var(--ease),opacity .4s}
+  .mbar.off{transform:translateY(140%);opacity:0;pointer-events:none}
+  .mbar .btn{flex:1;padding:14px 10px;box-shadow:none;font-size:.95rem}
+  .mbar .btn.wa{flex:0 0 auto;padding:14px 20px}
+  body.menu-open .mbar{transform:translateY(140%);opacity:0}
+  footer{padding-bottom:96px}
+}
+@media(max-width:480px){
+  .form .two{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:70px}
+  .cta .btn{width:100%}
+}
+@media(max-height:560px) and (orientation:landscape){.hero{min-height:560px}}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv{opacity:1;translate:none;scale:none}
+  .w>span{transform:none}
+  .pt{display:none}
+}
+
+</style>
+</head>
+<body>
+<div class="progress" id="prog"></div>
+<div class="pt" id="pt" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><span class="pt-brand">Blago</span></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#/">Blago <small>Sutomore</small></a>
+    <nav class="main" id="nav" aria-label="Main"><a href="#/" data-i18n="nav_home">Home</a><a href="#/apartmani" data-i18n="nav_stay">Apartments</a><a href="#/galerija" data-i18n="nav_gallery">Gallery</a><a href="#/o-nama" data-i18n="nav_about">About us</a><a href="#/kontakt" data-i18n="nav_contact">Contact</a><a class="navbook" href="#/" data-book data-i18n="book">Book now</a></nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="false" title="English">EN</button>
+      <button type="button" data-lang="me" aria-pressed="false" title="Crnogorski">ME</button>
+    </div>
+    <a class="btn small sh hbook" href="#/" data-book data-i18n="book">Book now</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu" data-i18n-aria="menu"><span></span><span></span></button>
+  </div>
+</header>
+<main>
+<div class="view" data-view="home">
+<div class="hero grain" id="hero" data-time="night">
+  <div class="hbg" id="hbg" aria-hidden="true">
+  <img class="hphoto" src="https://images.unsplash.com/photo-1758351820489-2a50f375a748?auto=format&fit=crop&w=2000&q=75" alt="" fetchpriority="high" decoding="async" onerror="this.style.visibility='hidden'">
+  <div class="tint tn"></div><div class="tint tm"></div><div class="tint td"></div><div class="tint te"></div>
+  <div class="lay glowl p" style="--d:.5"><div class="hsun"><i class="halo"></i><i class="srays"></i><i class="core"></i></div></div>
+  <div class="starsw">
+    <div class="lay st st1 p" style="--d:.2"><svg viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice"><circle cx="497" cy="313" r="1.3" fill="#fff"/><circle cx="767" cy="478" r="2.4" fill="#fff"/><circle cx="1291" cy="307" r="1.0" fill="#fff"/><circle cx="1250" cy="16" r="2.4" fill="#fff"/><circle cx="541" cy="292" r="1.3" fill="#fff"/><circle cx="402" cy="519" r="2.4" fill="#fff"/><circle cx="1117" cy="438" r="2.4" fill="#fff"/><circle cx="823" cy="337" r="1.3" fill="#fff"/><circle cx="484" cy="335" r="1.3" fill="#fff"/><circle cx="1081" cy="209" r="1.0" fill="#fff"/><circle cx="1385" cy="407" r="1.0" fill="#fff"/><circle cx="336" cy="398" r="1.0" fill="#fff"/><circle cx="626" cy="409" r="1.0" fill="#fff"/><circle cx="561" cy="252" r="2.4" fill="#fff"/><circle cx="1472" cy="413" r="2.4" fill="#fff"/><circle cx="818" cy="382" r="2.4" fill="#fff"/><circle cx="284" cy="459" r="1.8" fill="#fff"/><circle cx="209" cy="28" r="1.3" fill="#fff"/><circle cx="1023" cy="121" r="1.8" fill="#fff"/><circle cx="1386" cy="233" r="1.8" fill="#fff"/><circle cx="872" cy="269" r="2.4" fill="#fff"/><circle cx="1185" cy="189" r="2.4" fill="#fff"/><circle cx="1206" cy="128" r="1.8" fill="#fff"/><circle cx="1406" cy="478" r="1.0" fill="#fff"/><circle cx="582" cy="517" r="1.3" fill="#fff"/><circle cx="1440" cy="450" r="1.8" fill="#fff"/><circle cx="1119" cy="473" r="1.0" fill="#fff"/><circle cx="1471" cy="345" r="1.3" fill="#fff"/><circle cx="1306" cy="435" r="1.8" fill="#fff"/><circle cx="593" cy="73" r="1.0" fill="#fff"/><circle cx="997" cy="447" r="2.4" fill="#fff"/><circle cx="191" cy="186" r="1.0" fill="#fff"/><circle cx="850" cy="469" r="1.3" fill="#fff"/><circle cx="51" cy="160" r="2.4" fill="#fff"/><circle cx="1584" cy="222" r="1.0" fill="#fff"/><circle cx="100" cy="319" r="1.0" fill="#fff"/><circle cx="783" cy="377" r="1.8" fill="#fff"/><circle cx="1138" cy="461" r="1.8" fill="#fff"/><circle cx="1045" cy="130" r="1.0" fill="#fff"/><circle cx="644" cy="13" r="1.0" fill="#fff"/><circle cx="231" cy="317" r="1.0" fill="#fff"/><circle cx="414" cy="507" r="2.4" fill="#fff"/><circle cx="607" cy="322" r="1.8" fill="#fff"/><circle cx="329" cy="363" r="1.0" fill="#fff"/><circle cx="705" cy="170" r="1.8" fill="#fff"/><circle cx="293" cy="469" r="2.4" fill="#fff"/></svg></div><div class="lay st st2 p" style="--d:.3"><svg viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice"><circle cx="474" cy="199" r="2.4" fill="#fff"/><circle cx="268" cy="108" r="1.0" fill="#fff"/><circle cx="184" cy="80" r="1.3" fill="#fff"/><circle cx="1047" cy="117" r="2.4" fill="#fff"/><circle cx="1324" cy="25" r="2.4" fill="#fff"/><circle cx="1008" cy="242" r="2.4" fill="#fff"/><circle cx="1023" cy="303" r="1.3" fill="#fff"/><circle cx="834" cy="55" r="2.4" fill="#fff"/><circle cx="489" cy="398" r="1.0" fill="#fff"/><circle cx="1445" cy="146" r="2.4" fill="#fff"/><circle cx="981" cy="471" r="2.4" fill="#fff"/><circle cx="1496" cy="68" r="1.8" fill="#fff"/><circle cx="208" cy="517" r="1.0" fill="#fff"/><circle cx="801" cy="327" r="2.4" fill="#fff"/><circle cx="230" cy="348" r="1.0" fill="#fff"/><circle cx="703" cy="130" r="1.0" fill="#fff"/><circle cx="1029" cy="472" r="1.3" fill="#fff"/><circle cx="1200" cy="423" r="1.3" fill="#fff"/><circle cx="1252" cy="42" r="1.0" fill="#fff"/><circle cx="1010" cy="369" r="1.3" fill="#fff"/><circle cx="313" cy="494" r="2.4" fill="#fff"/><circle cx="1502" cy="309" r="2.4" fill="#fff"/><circle cx="595" cy="295" r="1.8" fill="#fff"/><circle cx="882" cy="79" r="1.3" fill="#fff"/><circle cx="1575" cy="317" r="1.0" fill="#fff"/><circle cx="1099" cy="363" r="1.8" fill="#fff"/><circle cx="1447" cy="192" r="2.4" fill="#fff"/><circle cx="1041" cy="329" r="1.3" fill="#fff"/><circle cx="642" cy="86" r="1.8" fill="#fff"/><circle cx="1092" cy="155" r="1.0" fill="#fff"/><circle cx="1049" cy="477" r="1.3" fill="#fff"/><circle cx="714" cy="134" r="1.0" fill="#fff"/><circle cx="615" cy="185" r="1.3" fill="#fff"/><circle cx="556" cy="27" r="2.4" fill="#fff"/><circle cx="531" cy="202" r="1.8" fill="#fff"/><circle cx="1454" cy="466" r="2.4" fill="#fff"/><circle cx="368" cy="346" r="2.4" fill="#fff"/><circle cx="248" cy="95" r="1.0" fill="#fff"/><circle cx="423" cy="508" r="1.3" fill="#fff"/><circle cx="624" cy="69" r="1.0" fill="#fff"/><circle cx="1575" cy="204" r="1.8" fill="#fff"/><circle cx="358" cy="301" r="2.4" fill="#fff"/><circle cx="484" cy="81" r="2.4" fill="#fff"/><circle cx="1165" cy="238" r="2.4" fill="#fff"/><circle cx="865" cy="51" r="1.0" fill="#fff"/><circle cx="601" cy="377" r="1.0" fill="#fff"/></svg></div>
+    <i class="hshoot"></i>
+  </div>
+</div>
+  <div class="scrim"></div>
+  <div class="time" role="group" aria-label="Time of day">
+    <button type="button" data-time="morning" aria-pressed="false" data-i18n="t_morning">Morning</button>
+    <button type="button" data-time="noon" aria-pressed="false" data-i18n="t_noon">Midday</button>
+    <button type="button" data-time="evening" aria-pressed="false" data-i18n="t_evening">Evening</button>
+    <button type="button" data-time="night" aria-pressed="true" data-i18n="t_night">Night</button>
+  </div>
+  <div class="wrap hero-in">
+    <h1 data-i18n-html="h1"><span class="ln"><span>Rumija above.</span></span><span class="ln"><span>The Adriatic below.</span></span></h1>
+    <p class="sub" data-i18n="sub">Apartments Blago in Sutomore: a garden for the first coffee, the city beach 1.1 km away.</p>
+    <form class="bar" id="heroForm">
+      <div class="field"><label for="h_in" data-i18n="f_in">Check-in</label><input type="date" id="h_in" required></div>
+      <div class="field"><label for="h_out" data-i18n="f_out">Check-out</label><input type="date" id="h_out" required></div>
+      <div class="field g"><label for="h_g" data-i18n="f_guests">Guests</label>
+        <select id="h_g"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+      <button class="btn sh" type="submit" data-i18n="f_go">Ask for these dates</button>
+    </form>
+  </div>
+  <div class="badge" aria-hidden="true"><svg viewBox="0 0 150 150"><defs><path id="bp" d="M75 75 m-58 0 a58 58 0 1 1 116 0 a58 58 0 1 1 -116 0"/></defs><text><textPath href="#bp" startOffset="0" data-i18n="direct_k">Direct booking</textPath></text><text><textPath href="#bp" startOffset="50%" data-i18n="direct_k">Direct booking</textPath></text></svg></div><div class="cue" aria-hidden="true"></div>
+</div>
+
+<div class="facts">
+  <div class="wrap">
+    <ul>
+      <li class="rv"><b data-i18n="fa1_b">Garden</b><span class="s" data-i18n="fa1_s">and mountain view</span></li>
+      <li class="rv" style="--d:.08s"><b><span class="count" data-to="1.1" data-dec="1">1.1</span> km</b><span class="s" data-i18n="fa2_s">to Sutomore City Beach</span></li>
+      <li class="rv" style="--d:.16s"><b><span class="count" data-to="10" data-dec="0">10</span> km</b><span class="s" data-i18n="fa3_s">to Port of Bar</span></li>
+      <li class="rv" style="--d:.24s"><b><span class="count" data-to="23" data-dec="0">23</span> km</b><span class="s" data-i18n="fa4_s">to Sveti Stefan</span></li>
+    </ul>
+  </div>
+</div>
+
+<div class="mq" aria-hidden="true"><div class="mq-t"><span data-i18n="mq1">Garden</span><i class="sunsep"></i><span data-i18n="mq2">Rumija</span><i class="sunsep"></i><span data-i18n="mq3">Adriatic</span><i class="sunsep"></i><span data-i18n="mq4">Sutomore</span><i class="sunsep"></i><span data-i18n="mq5">Beach</span><i class="sunsep"></i><span data-i18n="mq6">Tabija</span><i class="sunsep"></i><span data-i18n="mq1">Garden</span><i class="sunsep"></i><span data-i18n="mq2">Rumija</span><i class="sunsep"></i><span data-i18n="mq3">Adriatic</span><i class="sunsep"></i><span data-i18n="mq4">Sutomore</span><i class="sunsep"></i><span data-i18n="mq5">Beach</span><i class="sunsep"></i><span data-i18n="mq6">Tabija</span><i class="sunsep"></i><span data-i18n="mq1">Garden</span><i class="sunsep"></i><span data-i18n="mq2">Rumija</span><i class="sunsep"></i><span data-i18n="mq3">Adriatic</span><i class="sunsep"></i><span data-i18n="mq4">Sutomore</span><i class="sunsep"></i><span data-i18n="mq5">Beach</span><i class="sunsep"></i><span data-i18n="mq6">Tabija</span><i class="sunsep"></i><span data-i18n="mq1">Garden</span><i class="sunsep"></i><span data-i18n="mq2">Rumija</span><i class="sunsep"></i><span data-i18n="mq3">Adriatic</span><i class="sunsep"></i><span data-i18n="mq4">Sutomore</span><i class="sunsep"></i><span data-i18n="mq5">Beach</span><i class="sunsep"></i><span data-i18n="mq6">Tabija</span><i class="sunsep"></i></div></div>
+
+<section class="dark grain">
+  <div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <div class="kick rv" data-i18n="direct_k">Direct booking</div><h2 class="rv" data-split data-i18n="direct_h">Book direct. Talk to the host.</h2><p class="lead rv" data-i18n="direct_p">No call centre, no middleman. You write, we answer.</p>
+    <div class="three">
+      <div class="rv"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12z"/><circle class="dot" cx="9" cy="12" r=".9" fill="currentColor"/><circle class="dot" cx="12.5" cy="12" r=".9" fill="currentColor"/><circle class="dot" cx="16" cy="12" r=".9" fill="currentColor"/></svg></div><h3 data-i18n="d1_h">A real person replies</h3><p data-i18n="d1_p">Questions about arrival, parking or the beach? Ask us directly.</p></div>
+      <div class="rv" style="--d:.12s"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/><path class="tick" d="M8.5 15l2.5 2.5 4.5-5"/></svg></div><h3 data-i18n="d2_h">Flexible dates</h3><p data-i18n="d2_p">Early check-in or a late checkout? Just ask when you book.</p></div>
+      <div class="rv" style="--d:.24s"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path class="needle" d="M15.5 8.5l-2 5-5 2 2-5z" fill="currentColor"/></svg></div><h3 data-i18n="d3_h">Local tips</h3><p data-i18n="d3_p">Where to eat, which beach is quiet, how to reach Sveti Stefan.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="stay">
+  <div class="wrap">
+    <div class="rv"><div class="kick" data-i18n="stay_k">Stay</div><h2 data-split data-i18n="stay_h">Choose your apartment</h2></div>
+    <div class="cards"><article class="card zoom rv z" style="--d:0s">
+  <span class="idx" aria-hidden="true">01</span>
+  <div class="art xf"><div class="art" data-scene="garden"><img class="photo" src="https://images.unsplash.com/photo-1770460063079-4849ef1b876e?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><div class="art" data-scene="coffee"><img class="photo" src="https://images.unsplash.com/photo-1688573484990-f805263ed6ad?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div></div>
+  <div class="body"><h3 data-i18n="a1_h">Garden apartment</h3><p data-i18n="a1_p">Steps from the garden. Your own corner of shade for the afternoon.</p><div class="chips"><span data-i18n="ch1">Air conditioning</span><span>Wi-Fi</span><span data-i18n="ch3">Kitchen</span><span data-i18n="ch4">Balcony</span></div>
+    <div class="foot-row"><span data-i18n="price">Price on request</span><a href="#/kontakt?apt=a1" data-i18n="ask">Ask about this</a></div>
+  </div>
+</article><article class="card zoom rv z" style="--d:0.12s">
+  <span class="idx" aria-hidden="true">02</span>
+  <div class="art xf"><div class="art" data-scene="balcony"><img class="photo" src="https://images.unsplash.com/photo-1702830499141-a0634d87d6af?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><div class="art" data-scene="mountain"><img class="photo" src="https://images.unsplash.com/photo-1642356775007-b2a5fd6aef19?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div></div>
+  <div class="body"><h3 data-i18n="a2_h">Mountain-view apartment</h3><p data-i18n="a2_p">Wake up facing the ridge of Rumija.</p><div class="chips"><span data-i18n="ch1">Air conditioning</span><span>Wi-Fi</span><span data-i18n="ch4">Balcony</span></div>
+    <div class="foot-row"><span data-i18n="price">Price on request</span><a href="#/kontakt?apt=a2" data-i18n="ask">Ask about this</a></div>
+  </div>
+</article><article class="card zoom rv z" style="--d:0.24s">
+  <span class="idx" aria-hidden="true">03</span>
+  <div class="art xf"><div class="art" data-scene="bedroom"><img class="photo" src="https://images.unsplash.com/photo-1702014861736-d62834317c5e?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><div class="art" data-scene="living"><img class="photo" src="https://images.unsplash.com/photo-1773578978637-c9771e7a9913?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div></div>
+  <div class="body"><h3 data-i18n="a3_h">Family apartment</h3><p data-i18n="a3_p">More space for longer stays and bigger groups.</p><div class="chips"><span data-i18n="ch1">Air conditioning</span><span>Wi-Fi</span><span data-i18n="ch3">Kitchen</span></div>
+    <div class="foot-row"><span data-i18n="price">Price on request</span><a href="#/kontakt?apt=a3" data-i18n="ask">Ask about this</a></div>
+  </div>
+</article></div>
+    <div class="more rv"><a class="btn line" href="#/apartmani" data-i18n="all_apts">All apartments</a></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <div class="rv"><h2 data-split data-i18n="cta_h">Looking for free dates?</h2><p data-i18n="cta_p">Send us your dates. We reply directly.</p></div>
+    <a class="btn sh rv z" href="#/" data-book data-i18n="cta_btn">Send an inquiry</a>
+  </div>
+</section>
+</div>
+<div class="view" data-view="apartments" hidden>
+<div class="page-head ph-apartments">
+  <div class="ph-bg" aria-hidden="true"><img src="https://images.unsplash.com/photo-1702014861736-d62834317c5e?auto=format&fit=crop&w=1400&q=75" alt="" decoding="async" onerror="this.style.visibility='hidden'"></div>
+  <div class="ph-n" aria-hidden="true">02</div>
+  <div class="wrap"><h1 data-split data-i18n="apt_h1">Apartments</h1><p class="lead" data-i18n="apt_lead">Choose a place to stay and send us your dates. We reply directly.</p></div>
+  <div class="wave" aria-hidden="true"><div class="w1"><svg viewBox="0 0 2880 80" preserveAspectRatio="none"><path d="M0 40 Q180 0 360 40 T720 40 T1080 40 T1440 40 T1800 40 T2160 40 T2520 40 T2880 40 L2880 80 L0 80Z" fill="#fbf8f2"/></svg></div><div class="w2"><svg viewBox="0 0 2880 80" preserveAspectRatio="none"><path d="M0 40 Q180 0 360 40 T720 40 T1080 40 T1440 40 T1800 40 T2160 40 T2520 40 T2880 40 L2880 80 L0 80Z" fill="#fbf8f2"/></svg></div></div>
+</div>
+<section>
+  <div class="wrap"><article class="apt zoom rv">
+  <span class="idx" aria-hidden="true">01</span>
+  <div class="art xf"><div class="art" data-scene="garden"><img class="photo" src="https://images.unsplash.com/photo-1770460063079-4849ef1b876e?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><div class="art" data-scene="coffee"><img class="photo" src="https://images.unsplash.com/photo-1688573484990-f805263ed6ad?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div></div>
+  <div class="info"><h2 data-split data-i18n="a1_h">Garden apartment</h2><p data-i18n="a1_p">Steps from the garden. Your own corner of shade for the afternoon.</p><div class="chips"><span data-i18n="ch1">Air conditioning</span><span>Wi-Fi</span><span data-i18n="ch3">Kitchen</span><span data-i18n="ch4">Balcony</span></div>
+    <div class="foot-row"><span data-i18n="price">Price on request</span><a class="btn" href="#/kontakt?apt=a1" data-i18n="ask">Ask about this</a></div>
+  </div>
+</article><article class="apt zoom rv">
+  <span class="idx" aria-hidden="true">02</span>
+  <div class="art xf"><div class="art" data-scene="balcony"><img class="photo" src="https://images.unsplash.com/photo-1702830499141-a0634d87d6af?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><div class="art" data-scene="mountain"><img class="photo" src="https://images.unsplash.com/photo-1642356775007-b2a5fd6aef19?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div></div>
+  <div class="info"><h2 data-split data-i18n="a2_h">Mountain-view apartment</h2><p data-i18n="a2_p">Wake up facing the ridge of Rumija.</p><div class="chips"><span data-i18n="ch1">Air conditioning</span><span>Wi-Fi</span><span data-i18n="ch4">Balcony</span></div>
+    <div class="foot-row"><span data-i18n="price">Price on request</span><a class="btn" href="#/kontakt?apt=a2" data-i18n="ask">Ask about this</a></div>
+  </div>
+</article><article class="apt zoom rv">
+  <span class="idx" aria-hidden="true">03</span>
+  <div class="art xf"><div class="art" data-scene="bedroom"><img class="photo" src="https://images.unsplash.com/photo-1702014861736-d62834317c5e?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><div class="art" data-scene="living"><img class="photo" src="https://images.unsplash.com/photo-1773578978637-c9771e7a9913?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div></div>
+  <div class="info"><h2 data-split data-i18n="a3_h">Family apartment</h2><p data-i18n="a3_p">More space for longer stays and bigger groups.</p><div class="chips"><span data-i18n="ch1">Air conditioning</span><span>Wi-Fi</span><span data-i18n="ch3">Kitchen</span></div>
+    <div class="foot-row"><span data-i18n="price">Price on request</span><a class="btn" href="#/kontakt?apt=a3" data-i18n="ask">Ask about this</a></div>
+  </div>
+</article></div>
+</section>
+<section class="cta">
+  <div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <div class="rv"><h2 data-split data-i18n="cta_h">Looking for free dates?</h2><p data-i18n="cta_p">Send us your dates. We reply directly.</p></div>
+    <a class="btn sh rv z" href="#/" data-book data-i18n="cta_btn">Send an inquiry</a>
+  </div>
+</section>
+</div>
+<div class="view" data-view="gallery" hidden>
+<div class="page-head ph-gallery">
+  <div class="ph-bg" aria-hidden="true"><img src="https://images.unsplash.com/photo-1731182314020-5310a900a532?auto=format&fit=crop&w=1400&q=75" alt="" decoding="async" onerror="this.style.visibility='hidden'"></div>
+  <div class="ph-n" aria-hidden="true">03</div>
+  <div class="wrap"><h1 data-split data-i18n="gp_h1">Gallery</h1><p class="lead" data-i18n="gp_lead">Garden, beach, mountains and sea. A look at Sutomore and the days you can have here.</p></div>
+  <div class="wave" aria-hidden="true"><div class="w1"><svg viewBox="0 0 2880 80" preserveAspectRatio="none"><path d="M0 40 Q180 0 360 40 T720 40 T1080 40 T1440 40 T1800 40 T2160 40 T2520 40 T2880 40 L2880 80 L0 80Z" fill="#fbf8f2"/></svg></div><div class="w2"><svg viewBox="0 0 2880 80" preserveAspectRatio="none"><path d="M0 40 Q180 0 360 40 T720 40 T1080 40 T1440 40 T1800 40 T2160 40 T2520 40 T2880 40 L2880 80 L0 80Z" fill="#fbf8f2"/></svg></div></div>
+</div>
+<section>
+  <div class="wrap"><div class="gal"><button class="gi zoom rv z" type="button" data-scene="coffee" style="--r:3" aria-label="Morning on the balcony"><div class="art" data-scene="coffee"><img class="photo" src="https://images.unsplash.com/photo-1688573484990-f805263ed6ad?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="gcap" data-i18n="g_coffee">Morning on the balcony</span></button><button class="gi zoom rv z" type="button" data-scene="beach" style="--r:2" aria-label="The beach"><div class="art" data-scene="beach"><img class="photo" src="https://images.unsplash.com/photo-1720098190470-3d7526dbe148?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="gcap" data-i18n="g_beach">The beach</span></button><button class="gi zoom rv z" type="button" data-scene="fortress" style="--r:2" aria-label="Old town"><div class="art" data-scene="fortress"><img class="photo" src="https://images.unsplash.com/photo-1642624692237-48449dab3ceb?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="gcap" data-i18n="g_fortress">Old town</span></button><button class="gi zoom rv z" type="button" data-scene="harbour" style="--r:3" aria-label="The harbour"><div class="art" data-scene="harbour"><img class="photo" src="https://images.unsplash.com/photo-1731182314020-5310a900a532?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="gcap" data-i18n="g_harbour">The harbour</span></button><button class="gi zoom rv z" type="button" data-scene="skadar" style="--r:2" aria-label="Mountains and water"><div class="art" data-scene="skadar"><img class="photo" src="https://images.unsplash.com/photo-1587551323667-d58e6c839b23?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="gcap" data-i18n="g_skadar">Mountains and water</span></button><button class="gi zoom rv z" type="button" data-scene="stefan" style="--r:3" aria-label="Coastal town"><div class="art" data-scene="stefan"><img class="photo" src="https://images.unsplash.com/photo-1672225460441-6eb1561fc977?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="gcap" data-i18n="g_stefan">Coastal town</span></button><button class="gi zoom rv z" type="button" data-scene="bedroom" style="--r:2" aria-label="Bedroom"><div class="art" data-scene="bedroom"><img class="photo" src="https://images.unsplash.com/photo-1702014861736-d62834317c5e?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="gcap" data-i18n="g_bedroom">Bedroom</span></button><button class="gi zoom rv z" type="button" data-scene="balcony" style="--r:3" aria-label="Balcony with a view"><div class="art" data-scene="balcony"><img class="photo" src="https://images.unsplash.com/photo-1702830499141-a0634d87d6af?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="gcap" data-i18n="g_balcony">Balcony with a view</span></button><button class="gi zoom rv z" type="button" data-scene="night" style="--r:2" aria-label="View over the town"><div class="art" data-scene="night"><img class="photo" src="https://images.unsplash.com/photo-1719772355253-cac25a978d76?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="gcap" data-i18n="g_night">View over the town</span></button><button class="gi zoom rv z" type="button" data-scene="dinner" style="--r:3" aria-label="Terrace with a view"><div class="art" data-scene="dinner"><img class="photo" src="https://images.unsplash.com/photo-1693098243367-93320637839e?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="gcap" data-i18n="g_dinner">Terrace with a view</span></button><button class="gi zoom rv z" type="button" data-scene="living" style="--r:2" aria-label="Living area"><div class="art" data-scene="living"><img class="photo" src="https://images.unsplash.com/photo-1773578978637-c9771e7a9913?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="gcap" data-i18n="g_living">Living area</span></button><button class="gi zoom rv z" type="button" data-scene="garden" style="--r:2" aria-label="The garden"><div class="art" data-scene="garden"><img class="photo" src="https://images.unsplash.com/photo-1770460063079-4849ef1b876e?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="gcap" data-i18n="g_garden">The garden</span></button><button class="gi zoom rv z" type="button" data-scene="mountain" style="--r:3" aria-label="The mountains"><div class="art" data-scene="mountain"><img class="photo" src="https://images.unsplash.com/photo-1642356775007-b2a5fd6aef19?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="gcap" data-i18n="g_mountain">The mountains</span></button><button class="gi zoom rv z" type="button" data-scene="sunset" style="--r:3" aria-label="Sunset over the bay"><div class="art" data-scene="sunset"><img class="photo" src="https://images.unsplash.com/photo-1764241650510-c56cb849bb97?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="gcap" data-i18n="g_sunset">Sunset over the bay</span></button></div></div>
+</section>
+<section class="cta">
+  <div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <div class="rv"><h2 data-split data-i18n="cta_h">Looking for free dates?</h2><p data-i18n="cta_p">Send us your dates. We reply directly.</p></div>
+    <a class="btn sh rv z" href="#/" data-book data-i18n="cta_btn">Send an inquiry</a>
+  </div>
+</section>
+</div>
+<div class="view" data-view="about" hidden>
+<div class="page-head ph-about">
+  <div class="ph-bg" aria-hidden="true"><img src="https://images.unsplash.com/photo-1770460063079-4849ef1b876e?auto=format&fit=crop&w=1400&q=75" alt="" decoding="async" onerror="this.style.visibility='hidden'"></div>
+  <div class="ph-n" aria-hidden="true">04</div>
+  <div class="wrap"><h1 data-split data-i18n="ab_h1">About us</h1><p class="lead" data-i18n="ab_lead">A small place in Sutomore, with a garden, a mountain view and the sea close by.</p></div>
+  <div class="wave" aria-hidden="true"><div class="w1"><svg viewBox="0 0 2880 80" preserveAspectRatio="none"><path d="M0 40 Q180 0 360 40 T720 40 T1080 40 T1440 40 T1800 40 T2160 40 T2520 40 T2880 40 L2880 80 L0 80Z" fill="#fbf8f2"/></svg></div><div class="w2"><svg viewBox="0 0 2880 80" preserveAspectRatio="none"><path d="M0 40 Q180 0 360 40 T720 40 T1080 40 T1440 40 T1800 40 T2160 40 T2520 40 T2880 40 L2880 80 L0 80Z" fill="#fbf8f2"/></svg></div></div>
+</div>
+<section>
+  <div class="wrap split">
+    <div class="txt rv l"><h2 data-split data-i18n="ab_t">A small place, direct contact</h2><p data-i18n="ab_p1">Apartments Blago is in Sutomore, on the southern part of the Montenegrin coast. We have a garden, a view of the mountains and the city beach 1.1 km away.</p><p data-i18n="ab_p2">There is no reception desk and no call centre. You write to us, and we answer. We help with arrival, directions and ideas for your days here.</p></div>
+    <div class="pics rv r"><div class="pic"><div class="art" data-scene="garden"><img class="photo" src="https://images.unsplash.com/photo-1770460063079-4849ef1b876e?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div></div><div class="pic sm"><div class="art" data-scene="coffee"><img class="photo" src="https://images.unsplash.com/photo-1688573484990-f805263ed6ad?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div></div></div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <div class="rv"><h2 data-split data-i18n="v_h">What matters to us</h2></div>
+    <div class="three">
+      <div class="rv"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12z"/><circle class="dot" cx="9" cy="12" r=".9" fill="currentColor"/><circle class="dot" cx="12.5" cy="12" r=".9" fill="currentColor"/><circle class="dot" cx="16" cy="12" r=".9" fill="currentColor"/></svg></div><h3 data-i18n="v1_h">Clear answers</h3><p data-i18n="v1_p">Dates, arrival, directions: we reply directly and plainly.</p></div>
+      <div class="rv" style="--d:.12s"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path class="needle" d="M15.5 8.5l-2 5-5 2 2-5z" fill="currentColor"/></svg></div><h3 data-i18n="v2_h">Quiet mornings</h3><p data-i18n="v2_p">The garden and the mountain view are the best way to start the day.</p></div>
+      <div class="rv" style="--d:.24s"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/><path class="tick" d="M8.5 15l2.5 2.5 4.5-5"/></svg></div><h3 data-i18n="v3_h">Local knowledge</h3><p data-i18n="v3_p">We know where to eat, where to swim and what is worth the trip.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="day">
+  <div class="wrap">
+    <div class="rv"><div class="kick" data-i18n="day_k">Sutomore</div><h2 data-split data-i18n="day_h">A day in Sutomore</h2></div>
+    <ol class="tl"><li class="rv" style="--d:0s"><div class="t" data-i18n="s1_t">Morning</div><div class="c"><h3 data-i18n="s1_h">Coffee in the garden</h3><p data-i18n="s1_p">Mountain view, no schedule.</p></div><div class="tile zoom"><div class="art" data-scene="coffee"><img class="photo" src="https://images.unsplash.com/photo-1688573484990-f805263ed6ad?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div></div></li><li class="rv" style="--d:0s"><div class="t" data-i18n="s2_t">Midday</div><div class="c"><h3 data-i18n="s2_h">Sutomore City Beach</h3><p data-i18n="s2_p">1.1 km from the apartments.</p></div><div class="tile zoom"><div class="art" data-scene="beach"><img class="photo" src="https://images.unsplash.com/photo-1720098190470-3d7526dbe148?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div></div></li><li class="rv" style="--d:0s"><div class="t" data-i18n="s3_t">Afternoon</div><div class="c"><h3 data-i18n="s3_h">Tabija Fortress</h3><p data-i18n="s3_p">An old fortress in the middle of town.</p></div><div class="tile zoom"><div class="art" data-scene="fortress"><img class="photo" src="https://images.unsplash.com/photo-1642624692237-48449dab3ceb?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div></div></li><li class="rv" style="--d:0s"><div class="t" data-i18n="s4_t">Evening</div><div class="c"><h3 data-i18n="s4_h">Dinner by the sea</h3><p data-i18n="s4_p">Fresh fish, a promenade, the last light.</p></div><div class="tile zoom"><div class="art" data-scene="dinner"><img class="photo" src="https://images.unsplash.com/photo-1693098243367-93320637839e?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div></div></li></ol>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap split rev">
+    <div class="txt rv r"><h2 data-split data-i18n="sut_h">About Sutomore</h2><p data-i18n="sut_p">Sutomore is a coastal town in the Bar municipality, below Mount Rumija. The city beach, the old Tabija fortress and the seaside walk are all close. Bar, Lake Skadar and Sveti Stefan are an easy day trip.</p></div>
+    <div class="pics rv l"><div class="pic"><div class="art" data-scene="beach"><img class="photo" src="https://images.unsplash.com/photo-1720098190470-3d7526dbe148?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div></div><div class="pic sm"><div class="art" data-scene="night"><img class="photo" src="https://images.unsplash.com/photo-1719772355253-cac25a978d76?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div></div></div>
+  </div>
+</section>
+
+<section id="around">
+  <div class="wrap">
+    <div class="rv"><div class="kick" data-i18n="around_k">Around</div><h2 data-split data-i18n="around_h">Close enough for a day trip</h2></div>
+    <div class="rcs"><article class="rc zoom rv z" style="--d:0s">
+  <div class="art" data-scene="harbour"><img class="photo" src="https://images.unsplash.com/photo-1731182314020-5310a900a532?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="rc-km"><span class="count" data-to="10" data-dec="0">10</span> km</span>
+  <div class="rc-b"><h3 data-i18n="r1_h">Port of Bar</h3><p data-i18n="r1_s">Harbour and town</p></div>
+</article><article class="rc zoom rv z" style="--d:0.12s">
+  <div class="art" data-scene="skadar"><img class="photo" src="https://images.unsplash.com/photo-1587551323667-d58e6c839b23?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="rc-km"><span class="count" data-to="16" data-dec="0">16</span> km</span>
+  <div class="rc-b"><h3 data-i18n="r2_h">Lake Skadar</h3><p data-i18n="r2_s">The largest lake in the Balkans</p></div>
+</article><article class="rc zoom rv z" style="--d:0.24s">
+  <div class="art" data-scene="stefan"><img class="photo" src="https://images.unsplash.com/photo-1672225460441-6eb1561fc977?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div><span class="rc-km"><span class="count" data-to="23" data-dec="0">23</span> km</span>
+  <div class="rc-b"><h3 data-i18n="r3_h">Sveti Stefan</h3><p data-i18n="r3_s">The island hotel from the postcards</p></div>
+</article></div>
+    <div class="air rv"><span class="trail" aria-hidden="true"></span><svg class="plane" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
+  <div><h3 data-i18n="air_h">Podgorica Airport</h3><p data-i18n="air_s">Arriving by plane</p></div><span class="km" data-i18n="air_km">~35 km</span></div>
+  </div>
+</section>
+<section class="cta">
+  <div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <div class="rv"><h2 data-split data-i18n="cta_h">Looking for free dates?</h2><p data-i18n="cta_p">Send us your dates. We reply directly.</p></div>
+    <a class="btn sh rv z" href="#/" data-book data-i18n="cta_btn">Send an inquiry</a>
+  </div>
+</section>
+</div>
+<div class="view" data-view="contact" hidden>
+<div class="page-head ph-contact">
+  <div class="ph-bg" aria-hidden="true"><img src="https://images.unsplash.com/photo-1702830499141-a0634d87d6af?auto=format&fit=crop&w=1400&q=75" alt="" decoding="async" onerror="this.style.visibility='hidden'"></div>
+  <div class="ph-n" aria-hidden="true">05</div>
+  <div class="wrap"><h1 data-split data-i18n="ct_h1">Contact</h1><p class="lead" data-i18n="ct_lead">Send us your dates. We reply directly.</p></div>
+  <div class="wave" aria-hidden="true"><div class="w1"><svg viewBox="0 0 2880 80" preserveAspectRatio="none"><path d="M0 40 Q180 0 360 40 T720 40 T1080 40 T1440 40 T1800 40 T2160 40 T2520 40 T2880 40 L2880 80 L0 80Z" fill="#fbf8f2"/></svg></div><div class="w2"><svg viewBox="0 0 2880 80" preserveAspectRatio="none"><path d="M0 40 Q180 0 360 40 T720 40 T1080 40 T1440 40 T1800 40 T2160 40 T2520 40 T2880 40 L2880 80 L0 80Z" fill="#fbf8f2"/></svg></div></div>
+</div>
+<section id="upit">
+  <div class="wrap cgrid">
+    <div class="rv l">
+      <h2 data-split data-i18n="ct_h">Ask for your dates</h2><p class="lead" data-i18n="ct_p">Fill in the form and send it on WhatsApp or by email.</p>
+      <dl class="details">
+        <div><dt data-i18n="ct_phone">Phone</dt><dd><a data-cfg="phone" href="#">+382 00 000 000</a></dd></div>
+        <div><dt data-i18n="ct_email">Email</dt><dd><a data-cfg="email" href="#">info@example.com</a></dd></div>
+        <div><dt data-i18n="ct_loc">Location</dt><dd data-i18n="ct_loc_v">Sutomore, Montenegro</dd></div>
+      </dl>
+      <div class="side-art zoom"><div class="art" data-scene="dinner"><img class="photo" src="https://images.unsplash.com/photo-1693098243367-93320637839e?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" onerror="this.style.visibility='hidden'"></div></div>
+    </div>
+    <form class="form rv r" id="cForm" novalidate>
+      <div class="apt-pick" id="aptPick"></div>
+      <div class="two">
+        <div class="field"><label for="c_in" data-i18n="f_in">Check-in</label><input type="date" id="c_in"></div>
+        <div class="field"><label for="c_out" data-i18n="f_out">Check-out</label><input type="date" id="c_out"></div>
+      </div>
+      <div class="two">
+        <div class="field"><label for="c_g" data-i18n="f_guests">Guests</label>
+          <select id="c_g"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+        <div class="field"><label for="c_name" data-i18n="f_name">Name</label><input type="text" id="c_name" autocomplete="name"></div>
+      </div>
+      <div class="field"><label for="c_msg" data-i18n="f_msg">Message (optional)</label><textarea id="c_msg" rows="3"></textarea></div>
+      <div class="acts">
+        <button type="button" class="btn wa" id="sendWa" data-i18n="send_wa">Send on WhatsApp</button>
+        <button type="button" class="btn mail" id="sendMail" data-i18n="send_mail">Send by email</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="map" id="map">
+  <div class="wrap">
+    <div class="rv"><div class="kick" data-i18n="map_k">Location</div><h2 data-split data-i18n="map_h">Find us</h2></div>
+    <div class="map-box rv z">
+      <iframe title="Apartments Blago on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=42.1422112,19.039253&amp;z=15&amp;output=embed"></iframe>
+    </div>
+    <div class="map-act"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Apartments+Blago+Sutomore/@42.1422112,19.0297258,16z/data=!3m1!4b1!4m9!3m8!1s0x134e7706ccef9015:0xf61f7cb04c6095eb!5m2!4m1!1i2!8m2!3d42.1422112!4d19.039253" data-i18n="map_btn">Open in Google Maps</a></div>
+  </div>
+</section>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="fr"><a class="brand" href="#/">Blago <small>Sutomore</small></a><nav aria-label="Footer"><a href="#/" data-i18n="nav_home">Home</a><a href="#/apartmani" data-i18n="nav_stay">Apartments</a><a href="#/galerija" data-i18n="nav_gallery">Gallery</a><a href="#/o-nama" data-i18n="nav_about">About us</a><a href="#/kontakt" data-i18n="nav_contact">Contact</a></nav></div>
+    <div class="fine"><span data-i18n="foot_loc">Sutomore, Montenegro</span><span data-i18n="foot_made">Web: VELORE Marketing</span></div>
+    <div class="mega" aria-hidden="true">Blago</div>
+  </div>
+</footer>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Gallery">
+  <button type="button" class="lb-x" id="lbX" aria-label="Close" data-i18n-aria="lb_close">&times;</button>
+  <button type="button" class="lb-p" id="lbP" aria-label="Previous" data-i18n-aria="lb_prev">&#8249;</button>
+  <div class="lb-in"><div class="lb-stage" id="lbStage"></div><p class="lb-cap" id="lbCap"></p></div>
+  <button type="button" class="lb-n" id="lbN" aria-label="Next" data-i18n-aria="lb_next">&#8250;</button>
+</div>
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" data-i18n-aria="wa_aria"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.27-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.3 15l-.31-.18-3.13.82.84-3.05-.2-.32A8.1 8.1 0 0 1 12.04 3.8zm-3.1 3.9c-.2 0-.5.07-.77.36-.27.3-1 .98-1 2.4s1.03 2.78 1.17 2.97c.14.2 2 3.2 4.95 4.36 2.45.96 2.95.77 3.48.72.53-.05 1.7-.7 1.94-1.37.24-.67.24-1.25.17-1.37-.07-.12-.27-.2-.56-.34-.3-.15-1.7-.84-1.96-.94-.27-.1-.46-.15-.65.14-.2.3-.75.94-.92 1.13-.17.2-.34.22-.63.07-.3-.15-1.23-.45-2.34-1.44-.87-.77-1.45-1.72-1.62-2.02-.17-.3-.02-.45.13-.6.13-.13.3-.34.44-.5.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.65-1.58-.9-2.17-.23-.56-.47-.49-.65-.5h-.55z"/></svg></a>
+<div class="mbar" id="mbar"><a class="btn sh" href="#/" data-book data-i18n="book">Book now</a><a class="btn wa" id="mbarWa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.27-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.3 15l-.31-.18-3.13.82.84-3.05-.2-.32A8.1 8.1 0 0 1 12.04 3.8zm-3.1 3.9c-.2 0-.5.07-.77.36-.27.3-1 .98-1 2.4s1.03 2.78 1.17 2.97c.14.2 2 3.2 4.95 4.36 2.45.96 2.95.77 3.48.72.53-.05 1.7-.7 1.94-1.37.24-.67.24-1.25.17-1.37-.07-.12-.27-.2-.56-.34-.3-.15-1.7-.84-1.96-.94-.27-.1-.46-.15-.65.14-.2.3-.75.94-.92 1.13-.17.2-.34.22-.63.07-.3-.15-1.23-.45-2.34-1.44-.87-.77-1.45-1.72-1.62-2.02-.17-.3-.02-.45.13-.6.13-.13.3-.34.44-.5.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.65-1.58-.9-2.17-.23-.56-.47-.49-.65-.5h-.55z"/></svg>WhatsApp</a></div>
+<script>
+(function(){
+  // ============ Settings: edit here ============
+  var CONFIG = {
+    WA: '38200000000',            // WhatsApp number, digits only, with country code
+    EMAIL: 'info@example.com',
+    PHONE: '+382 00 000 000',
+    PHONE_LINK: '+38200000000'
+  };
+  // =============================================
+
+  var T = {"en": {"title_home": "Apartments Blago – Sutomore, Montenegro", "title_apartments": "Apartments – Apartments Blago, Sutomore", "title_gallery": "Gallery – Apartments Blago, Sutomore", "title_about": "About us – Apartments Blago, Sutomore", "title_contact": "Contact – Apartments Blago, Sutomore", "nav_home": "Home", "nav_stay": "Apartments", "nav_gallery": "Gallery", "nav_about": "About us", "nav_contact": "Contact", "book": "Book now", "menu": "Menu", "t_morning": "Morning", "t_noon": "Midday", "t_evening": "Evening", "t_night": "Night", "h1": "<span class=\"ln\"><span>Rumija above.<\/span><\/span><span class=\"ln\"><span>The Adriatic below.<\/span><\/span>", "sub": "Apartments Blago in Sutomore: a garden for the first coffee, the city beach 1.1 km away.", "f_in": "Check-in", "f_out": "Check-out", "f_guests": "Guests", "f_go": "Ask for these dates", "f_name": "Name", "f_msg": "Message (optional)", "fa1_b": "Garden", "fa1_s": "and mountain view", "fa2_s": "to Sutomore City Beach", "fa3_s": "to Port of Bar", "fa4_s": "to Sveti Stefan", "mq1": "Garden", "mq2": "Rumija", "mq3": "Adriatic", "mq4": "Sutomore", "mq5": "Beach", "mq6": "Tabija", "direct_k": "Direct booking", "direct_h": "Book direct. Talk to the host.", "direct_p": "No call centre, no middleman. You write, we answer.", "d1_h": "A real person replies", "d1_p": "Questions about arrival, parking or the beach? Ask us directly.", "d2_h": "Flexible dates", "d2_p": "Early check-in or a late checkout? Just ask when you book.", "d3_h": "Local tips", "d3_p": "Where to eat, which beach is quiet, how to reach Sveti Stefan.", "stay_k": "Stay", "stay_h": "Choose your apartment", "all_apts": "All apartments", "a1_h": "Garden apartment", "a1_p": "Steps from the garden. Your own corner of shade for the afternoon.", "a2_h": "Mountain-view apartment", "a2_p": "Wake up facing the ridge of Rumija.", "a3_h": "Family apartment", "a3_p": "More space for longer stays and bigger groups.", "ch1": "Air conditioning", "ch3": "Kitchen", "ch4": "Balcony", "price": "Price on request", "ask": "Ask about this", "day_k": "Sutomore", "day_h": "A day in Sutomore", "s1_t": "Morning", "s1_h": "Coffee in the garden", "s1_p": "Mountain view, no schedule.", "s2_t": "Midday", "s2_h": "Sutomore City Beach", "s2_p": "1.1 km from the apartments.", "s3_t": "Afternoon", "s3_h": "Tabija Fortress", "s3_p": "An old fortress in the middle of town.", "s4_t": "Evening", "s4_h": "Dinner by the sea", "s4_p": "Fresh fish, a promenade, the last light.", "gal_k": "Gallery", "gal_h": "Take a look around", "gal_btn": "Open the gallery", "gp_h1": "Gallery", "gp_lead": "Garden, beach, mountains and sea. A look at Sutomore and the days you can have here.", "g_coffee": "Morning on the balcony", "g_beach": "The beach", "g_fortress": "Old town", "g_harbour": "The harbour", "g_skadar": "Mountains and water", "g_stefan": "Coastal town", "g_bedroom": "Bedroom", "g_balcony": "Balcony with a view", "g_night": "View over the town", "g_dinner": "Terrace with a view", "g_living": "Living area", "g_garden": "The garden", "g_mountain": "The mountains", "g_sunset": "Sunset over the bay", "lb_close": "Close", "lb_prev": "Previous", "lb_next": "Next", "around_k": "Around", "around_h": "Close enough for a day trip", "r1_h": "Port of Bar", "r1_s": "Harbour and town", "r2_h": "Lake Skadar", "r2_s": "The largest lake in the Balkans", "r3_h": "Sveti Stefan", "r3_s": "The island hotel from the postcards", "air_h": "Podgorica Airport", "air_s": "Arriving by plane", "air_km": "~35 km", "cta_h": "Looking for free dates?", "cta_p": "Send us your dates. We reply directly.", "cta_btn": "Send an inquiry", "apt_h1": "Apartments", "apt_lead": "Choose a place to stay and send us your dates. We reply directly.", "ab_h1": "About us", "ab_lead": "A small place in Sutomore, with a garden, a mountain view and the sea close by.", "ab_t": "A small place, direct contact", "ab_p1": "Apartments Blago is in Sutomore, on the southern part of the Montenegrin coast. We have a garden, a view of the mountains and the city beach 1.1 km away.", "ab_p2": "There is no reception desk and no call centre. You write to us, and we answer. We help with arrival, directions and ideas for your days here.", "v_h": "What matters to us", "v1_h": "Clear answers", "v1_p": "Dates, arrival, directions: we reply directly and plainly.", "v2_h": "Quiet mornings", "v2_p": "The garden and the mountain view are the best way to start the day.", "v3_h": "Local knowledge", "v3_p": "We know where to eat, where to swim and what is worth the trip.", "sut_h": "About Sutomore", "sut_p": "Sutomore is a coastal town in the Bar municipality, below Mount Rumija. The city beach, the old Tabija fortress and the seaside walk are all close. Bar, Lake Skadar and Sveti Stefan are an easy day trip.", "how_h": "Getting here", "ct_h1": "Contact", "ct_lead": "Send us your dates. We reply directly.", "ct_h": "Ask for your dates", "ct_p": "Fill in the form and send it on WhatsApp or by email.", "ct_phone": "Phone", "ct_email": "Email", "ct_loc": "Location", "ct_loc_v": "Sutomore, Montenegro", "pick": "Your choice:", "map_k": "Location", "map_h": "Find us", "map_btn": "Open in Google Maps", "send_wa": "Send on WhatsApp", "send_mail": "Send by email", "wa_aria": "Chat on WhatsApp", "foot_made": "Web: VELORE Marketing", "foot_loc": "Sutomore, Montenegro", "msg_hello": "Hello! I would like to ask about Apartments Blago in Sutomore.", "msg_dates": "Dates", "msg_guests": "Guests", "msg_name": "Name", "msg_apt": "Apartment", "subject": "Inquiry – Apartments Blago"}, "me": {"title_home": "Apartmani Blago – Sutomore, Crna Gora", "title_apartments": "Apartmani – Apartmani Blago, Sutomore", "title_gallery": "Galerija – Apartmani Blago, Sutomore", "title_about": "O nama – Apartmani Blago, Sutomore", "title_contact": "Kontakt – Apartmani Blago, Sutomore", "nav_home": "Početna", "nav_stay": "Apartmani", "nav_gallery": "Galerija", "nav_about": "O nama", "nav_contact": "Kontakt", "book": "Rezerviši", "menu": "Meni", "t_morning": "Jutro", "t_noon": "Podne", "t_evening": "Veče", "t_night": "Noć", "h1": "<span class=\"ln\"><span>Rumija iznad.<\/span><\/span><span class=\"ln\"><span>Jadran ispod.<\/span><\/span>", "sub": "Apartmani Blago u Sutomoru: bašta za prvu kafu, gradska plaža na 1,1 km.", "f_in": "Dolazak", "f_out": "Odlazak", "f_guests": "Gostiju", "f_go": "Pošalji upit", "f_name": "Ime", "f_msg": "Poruka (nije obavezno)", "fa1_b": "Bašta", "fa1_s": "i pogled na planinu", "fa2_s": "do gradske plaže Sutomore", "fa3_s": "do luke Bar", "fa4_s": "do Svetog Stefana", "mq1": "Bašta", "mq2": "Rumija", "mq3": "Jadran", "mq4": "Sutomore", "mq5": "Plaža", "mq6": "Tabija", "direct_k": "Direktna rezervacija", "direct_h": "Rezerviši direktno. Pričaj sa domaćinom.", "direct_p": "Bez posrednika. Napišeš, mi odgovaramo.", "d1_h": "Odgovara stvarna osoba", "d1_p": "Pitanja o dolasku, parkingu ili plaži? Pitaj nas direktno.", "d2_h": "Fleksibilni termini", "d2_p": "Raniji ulazak ili kasniji izlazak? Samo pitaj pri rezervaciji.", "d3_h": "Lokalni savjeti", "d3_p": "Gdje jesti, koja je plaža mirna, kako do Svetog Stefana.", "stay_k": "Smještaj", "stay_h": "Izaberi apartman", "all_apts": "Svi apartmani", "a1_h": "Apartman sa baštom", "a1_p": "Na korak od bašte. Tvoj kutak hlada za popodne.", "a2_h": "Apartman sa pogledom na planinu", "a2_p": "Probudi se okrenut grebenu Rumije.", "a3_h": "Porodični apartman", "a3_p": "Više prostora za duže boravke i veće grupe.", "ch1": "Klima", "ch3": "Kuhinja", "ch4": "Balkon", "price": "Cijena na upit", "ask": "Upitaj za ovaj apartman", "day_k": "Sutomore", "day_h": "Jedan dan u Sutomoru", "s1_t": "Jutro", "s1_h": "Kafa u bašti", "s1_p": "Pogled na planinu, bez žurbe.", "s2_t": "Podne", "s2_h": "Gradska plaža Sutomore", "s2_p": "1,1 km od apartmana.", "s3_t": "Popodne", "s3_h": "Tvrđava Tabija", "s3_p": "Stara tvrđava u centru Sutomora.", "s4_t": "Veče", "s4_h": "Večera uz more", "s4_p": "Svježa riba, šetalište, posljednja svjetlost.", "gal_k": "Galerija", "gal_h": "Pogledaj okolo", "gal_btn": "Otvori galeriju", "gp_h1": "Galerija", "gp_lead": "Bašta, plaža, planine i more. Pogled na Sutomore i dane koje možeš provesti kod nas.", "g_coffee": "Jutro na balkonu", "g_beach": "Plaža", "g_fortress": "Stari grad", "g_harbour": "Luka", "g_skadar": "Planine i voda", "g_stefan": "Primorski gradić", "g_bedroom": "Spavaća soba", "g_balcony": "Balkon sa pogledom", "g_night": "Pogled na grad", "g_dinner": "Terasa sa pogledom", "g_living": "Dnevni boravak", "g_garden": "Bašta", "g_mountain": "Planine", "g_sunset": "Zalazak sunca", "lb_close": "Zatvori", "lb_prev": "Prethodna", "lb_next": "Sljedeća", "around_k": "Okolina", "around_h": "Dovoljno blizu za izlet", "r1_h": "Luka Bar", "r1_s": "Luka i grad Bar", "r2_h": "Skadarsko jezero", "r2_s": "Najveće jezero na Balkanu", "r3_h": "Sveti Stefan", "r3_s": "Ostrvo-hotel sa razglednica", "air_h": "Aerodrom Podgorica", "air_s": "Dolazak avionom", "air_km": "oko 35 km", "cta_h": "Tražiš slobodan termin?", "cta_p": "Pošalji nam datume. Odgovaramo direktno.", "cta_btn": "Pošalji upit", "apt_h1": "Apartmani", "apt_lead": "Izaberi smještaj i pošalji nam termin. Odgovaramo direktno.", "ab_h1": "O nama", "ab_lead": "Mali smještaj u Sutomoru, sa baštom, pogledom na planinu i morem u blizini.", "ab_t": "Mali smještaj, direktan kontakt", "ab_p1": "Apartmani Blago nalaze se u Sutomoru, na južnom dijelu crnogorskog primorja. Imamo baštu, pogled na planinu i gradsku plažu na 1,1 km.", "ab_p2": "Nema recepcije ni pozivnog centra. Pišeš nama, a mi odgovaramo. Pomažemo oko dolaska, puta i ideja za tvoje dane kod nas.", "v_h": "Šta nam je važno", "v1_h": "Jasni odgovori", "v1_p": "Termini, dolazak, put: odgovaramo direktno i jasno.", "v2_h": "Mirna jutra", "v2_p": "Bašta i pogled na planinu su najbolji početak dana.", "v3_h": "Znanje o kraju", "v3_p": "Znamo gdje jesti, gdje se kupati i šta vrijedi obići.", "sut_h": "O Sutomoru", "sut_p": "Sutomore je primorski gradić u opštini Bar, ispod planine Rumije. Gradska plaža, stara tvrđava Tabija i šetalište uz more su blizu. Bar, Skadarsko jezero i Sveti Stefan su lak izlet.", "how_h": "Kako do nas", "ct_h1": "Kontakt", "ct_lead": "Pošalji nam termin. Odgovaramo direktno.", "ct_h": "Pošalji upit za termin", "ct_p": "Popuni formu i pošalji je na WhatsApp ili e-poštom.", "ct_phone": "Telefon", "ct_email": "E-pošta", "ct_loc": "Lokacija", "ct_loc_v": "Sutomore, Crna Gora", "pick": "Tvoj izbor:", "map_k": "Lokacija", "map_h": "Gdje smo", "map_btn": "Otvori u Google Maps", "send_wa": "Pošalji na WhatsApp", "send_mail": "Pošalji e-poštom", "wa_aria": "Piši nam na WhatsApp", "foot_made": "Web: VELORE Marketing", "foot_loc": "Sutomore, Crna Gora", "msg_hello": "Zdravo! Želim da upitam za Apartmane Blago u Sutomoru.", "msg_dates": "Termin", "msg_guests": "Gostiju", "msg_name": "Ime", "msg_apt": "Apartman", "subject": "Upit – Apartmani Blago"}};
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var canHover = window.matchMedia('(hover: hover)').matches;
+  var page = 'home';
+  var slavic = /^(sr|hr|bs|me|cnr|sl|mk)/i;
+  var lang = 'me';
+  try{
+    var saved = localStorage.getItem('blago-lang');
+    if(saved && T[saved]) lang = saved;
+    else lang = slavic.test(navigator.language || '') ? 'me' : 'en';
+  }catch(e){
+    lang = slavic.test(navigator.language || '') ? 'me' : 'en';
+  }
+  function $(s, r){ return (r || document).querySelector(s); }
+  function $$(s, r){ return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+
+  function setTitle(){ var t = T[lang]['title_'+page]; if(t) document.title = t; }
+  function fmt(v, dec){ var s = Number(v).toFixed(dec); return lang === 'me' ? s.replace('.', ',') : s; }
+  function renderCounters(){ $$('.count').forEach(function(el){ if(!el.__anim) el.textContent = fmt(el.getAttribute('data-to'), +el.getAttribute('data-dec') || 0); }); }
+
+  function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+  function splitWords(el){
+    var txt = (el.textContent || '').replace(/\s+/g,' ').trim(); if(!txt) return;
+    var words = txt.split(' ');
+    el.setAttribute('aria-label', txt);
+    el.innerHTML = words.map(function(w, i){
+      return '<span class="w' + (i === words.length - 1 ? ' last' : '') + '" aria-hidden="true"><span style="--i:' + i + '">' + esc(w) + '</span></span>';
+    }).join(' ');
+  }
+  function applyLang(l){
+    lang = l;
+    var d = T[l];
+    document.documentElement.lang = l === 'me' ? 'cnr' : 'en';
+    $$('[data-i18n]').forEach(function(el){ var k = el.getAttribute('data-i18n'); if(d[k] != null) el.textContent = d[k]; });
+    $$('[data-i18n-html]').forEach(function(el){ var k = el.getAttribute('data-i18n-html'); if(d[k] != null) el.innerHTML = d[k]; });
+    $$('[data-i18n-aria]').forEach(function(el){ var k = el.getAttribute('data-i18n-aria'); if(d[k] != null) el.setAttribute('aria-label', d[k]); });
+    $$('.lang button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === l)); });
+    $$('[data-split]').forEach(splitWords);
+    renderCounters(); updatePick(); setTitle(); updateCap();
+    var waUrl = 'https://wa.me/' + CONFIG.WA + '?text=' + encodeURIComponent(d.msg_hello);
+    var wa = $('#waFloat'); if(wa) wa.href = waUrl;
+    var wb = $('#mbarWa'); if(wb) wb.href = waUrl;
+    try{ localStorage.setItem('blago-lang', l); }catch(e){}
+  }
+  $$('.lang button').forEach(function(b){ b.addEventListener('click', function(){ applyLang(b.getAttribute('data-lang')); }); });
+
+  $$('[data-cfg="phone"]').forEach(function(a){ a.textContent = CONFIG.PHONE; a.setAttribute('href','tel:'+CONFIG.PHONE_LINK); });
+  $$('[data-cfg="email"]').forEach(function(a){ a.textContent = CONFIG.EMAIL; a.setAttribute('href','mailto:'+CONFIG.EMAIL); });
+
+  // menu
+  var menuBtn = $('#menuBtn'), nav = $('#nav');
+  function setMenu(o){
+    if(!nav || !menuBtn) return;
+    nav.classList.toggle('open', o); menuBtn.setAttribute('aria-expanded', String(o));
+    document.body.classList.toggle('menu-open', o); document.body.classList.toggle('lock', o);
+  }
+  function closeMenu(){ setMenu(false); }
+  if(menuBtn && nav){
+    menuBtn.addEventListener('click', function(){ setMenu(!nav.classList.contains('open')); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeMenu(); });
+    window.addEventListener('resize', function(){ if(window.innerWidth > 1000) closeMenu(); });
+  }
+
+  // ---------- hero: sunrise intro, time of day, parallax ----------
+  var hero = $('#hero'), hbg = $('#hbg'), introT = 0;
+  function setTime(t){
+    if(!hero) return;
+    hero.setAttribute('data-time', t);
+    $$('.time button').forEach(function(x){ x.setAttribute('aria-pressed', String(x.getAttribute('data-time') === t)); });
+  }
+  function heroIntro(){
+    clearTimeout(introT);
+    setTime('night');
+    introT = setTimeout(function(){ setTime('morning'); }, reduce ? 0 : 750);
+  }
+  if(hero){
+    $$('.time button').forEach(function(b){ b.addEventListener('click', function(){ clearTimeout(introT); setTime(b.getAttribute('data-time')); }); });
+    if(canHover && !reduce){
+      var raf = 0, nx = 0, ny = 0;
+      hero.addEventListener('mousemove', function(e){
+        var r = hero.getBoundingClientRect();
+        nx = (e.clientX - r.left) / r.width - .5; ny = (e.clientY - r.top) / r.height - .5;
+        if(!raf) raf = requestAnimationFrame(function(){ raf = 0; hero.style.setProperty('--px', nx.toFixed(3)); hero.style.setProperty('--py', ny.toFixed(3)); });
+      });
+      hero.addEventListener('mouseleave', function(){ hero.style.setProperty('--px', 0); hero.style.setProperty('--py', 0); });
+    }
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){ hero.classList.toggle('off', !es[0].isIntersecting); }, {threshold:0}).observe(hero);
+    }
+  }
+
+  // ---------- scroll: progress bar, header, hero depth ----------
+  var hdr = $('header.top'), prog = $('#prog'), ticking = false;
+  function onScroll(){
+    ticking = false;
+    var y = window.scrollY || 0, h = document.documentElement.scrollHeight - window.innerHeight;
+    if(hdr) hdr.classList.toggle('s', y > 30);
+    if(prog) prog.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, y / h) : 0).toFixed(4) + ')';
+    if(hbg && page === 'home' && !reduce && y < 1000) hbg.style.transform = 'translate3d(0,' + (y * .22).toFixed(1) + 'px,0)';
+  }
+  window.addEventListener('scroll', function(){ if(!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
+
+  // ---------- observers: reveal, scenes, counters ----------
+  var rvo = null, cno = null;
+  function ease(t){ return 1 - Math.pow(1 - t, 3); }
+  function animateCount(el){
+    if(el.__done) return; el.__done = true;
+    var to = parseFloat(el.getAttribute('data-to')), dec = +el.getAttribute('data-dec') || 0;
+    if(reduce){ return; }
+    el.__anim = true;
+    var t0 = null;
+    function step(ts){
+      if(t0 === null) t0 = ts;
+      var p = Math.min(1, (ts - t0) / 1500);
+      el.textContent = fmt(to * ease(p), dec);
+      if(p < 1) requestAnimationFrame(step); else { el.__anim = false; el.textContent = fmt(to, dec); }
+    }
+    requestAnimationFrame(step);
+  }
+  if('IntersectionObserver' in window){
+    rvo = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); rvo.unobserve(e.target); } }); }, {threshold:.12, rootMargin:'0px 0px -6% 0px'});
+    $$('.rv').forEach(function(el){ rvo.observe(el); });
+    var sco = new IntersectionObserver(function(es){ es.forEach(function(e){ e.target.classList.toggle('on', e.isIntersecting); }); }, {rootMargin:'120px'});
+    $$('.sc').forEach(function(el){ sco.observe(el); });
+    cno = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ animateCount(e.target); cno.unobserve(e.target); } }); }, {threshold:.6});
+    $$('.count').forEach(function(el){ cno.observe(el); });
+  } else {
+    $$('.rv').forEach(function(el){ el.classList.add('in'); });
+    $$('.sc').forEach(function(el){ el.classList.add('on'); });
+  }
+
+  // ---------- tilt on apartment cards ----------
+  if(canHover && !reduce){
+    $$('.card').forEach(function(c){
+      c.addEventListener('mousemove', function(e){
+        var r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+        c.style.setProperty('--ry', (x * 7).toFixed(2) + 'deg'); c.style.setProperty('--rx', (-y * 7).toFixed(2) + 'deg'); c.classList.add('hv');
+      });
+      c.addEventListener('mouseleave', function(){ c.style.setProperty('--ry','0deg'); c.style.setProperty('--rx','0deg'); c.classList.remove('hv'); });
+    });
+  }
+
+  // ---------- dates + forms ----------
+  function iso(d){ var m = d.getMonth()+1, day = d.getDate(); return d.getFullYear()+'-'+(m<10?'0':'')+m+'-'+(day<10?'0':'')+day; }
+  var today = new Date();
+  function bindDates(inId, outId){
+    var a = document.getElementById(inId), b = document.getElementById(outId);
+    if(!a || !b) return;
+    a.min = iso(today); b.min = iso(today);
+    a.addEventListener('change', function(){
+      if(!a.value) return;
+      var n = new Date(a.value + 'T00:00:00'); n.setDate(n.getDate()+1);
+      b.min = iso(n);
+      if(!b.value || b.value <= a.value) b.value = iso(n);
+    });
+  }
+  bindDates('h_in','h_out'); bindDates('c_in','c_out');
+
+  var hf = $('#heroForm');
+  if(hf){
+    hf.addEventListener('submit', function(e){
+      e.preventDefault();
+      window.location.hash = '#/kontakt?in=' + encodeURIComponent($('#h_in').value) + '&out=' + encodeURIComponent($('#h_out').value) + '&g=' + encodeURIComponent($('#h_g').value);
+    });
+  }
+
+  var aptKey = null;
+  function updatePick(){
+    var el = $('#aptPick'); if(!el) return;
+    if(aptKey && T[lang][aptKey+'_h']){ el.textContent = T[lang].pick + ' ' + T[lang][aptKey+'_h']; el.classList.add('on'); }
+    else el.classList.remove('on');
+  }
+  function buildMessage(){
+    var d = T[lang];
+    var i = $('#c_in').value, o = $('#c_out').value, g = $('#c_g').value, n = $('#c_name').value.trim(), m = $('#c_msg').value.trim();
+    var parts = [d.msg_hello];
+    if(aptKey) parts.push(d.msg_apt + ': ' + d[aptKey+'_h']);
+    if(i || o) parts.push(d.msg_dates + ': ' + (i || '?') + ' – ' + (o || '?'));
+    parts.push(d.msg_guests + ': ' + g);
+    if(n) parts.push(d.msg_name + ': ' + n);
+    if(m) parts.push(m);
+    return parts.join('\n');
+  }
+  $('#sendWa').addEventListener('click', function(){ window.open('https://wa.me/' + CONFIG.WA + '?text=' + encodeURIComponent(buildMessage()), '_blank', 'noopener'); });
+  $('#sendMail').addEventListener('click', function(){ window.location.href = 'mailto:' + CONFIG.EMAIL + '?subject=' + encodeURIComponent(T[lang].subject) + '&body=' + encodeURIComponent(buildMessage()); });
+
+  // ---------- lightbox ----------
+  var lb = $('#lb'), stage = $('#lbStage'), cap = $('#lbCap'), gis = $$('.gi'), cur = 0, opener = null;
+  function updateCap(){ if(lb && !lb.hidden && gis[cur]) cap.textContent = T[lang]['g_' + gis[cur].getAttribute('data-scene')] || ''; }
+  function showImg(i){
+    cur = (i + gis.length) % gis.length;
+    var a = $('.art', gis[cur]), c = a.cloneNode(true);
+    c.removeAttribute('data-scene'); stage.innerHTML = ''; stage.appendChild(c);
+    stage.style.animation = 'none'; void stage.offsetWidth; stage.style.animation = '';
+    updateCap();
+  }
+  function openLb(i){ opener = document.activeElement; lb.hidden = false; document.body.style.overflow = 'hidden'; showImg(i); $('#lbX').focus(); }
+  function closeLb(){ if(lb.hidden) return; lb.hidden = true; document.body.style.overflow = ''; if(opener && opener.focus) opener.focus(); }
+  gis.forEach(function(g, i){ g.addEventListener('click', function(){ openLb(i); }); });
+  $('#lbX').addEventListener('click', closeLb);
+  $('#lbP').addEventListener('click', function(){ showImg(cur - 1); });
+  $('#lbN').addEventListener('click', function(){ showImg(cur + 1); });
+  lb.addEventListener('click', function(e){ if(e.target === lb || e.target.classList.contains('lb-in')) closeLb(); });
+  document.addEventListener('keydown', function(e){
+    if(lb.hidden) return;
+    if(e.key === 'Escape') closeLb(); else if(e.key === 'ArrowLeft') showImg(cur - 1); else if(e.key === 'ArrowRight') showImg(cur + 1);
+  });
+  var tx = 0;
+  lb.addEventListener('touchstart', function(e){ tx = e.touches[0].clientX; }, {passive:true});
+  lb.addEventListener('touchend', function(e){ var dx = e.changedTouches[0].clientX - tx; if(Math.abs(dx) > 50) showImg(cur + (dx < 0 ? 1 : -1)); }, {passive:true});
+
+  // ---------- mobile action bar ----------
+  var mbar = $('#mbar'), barVis = false;
+  function updMbar(){ if(mbar) mbar.classList.toggle('off', page === 'home' && barVis); }
+  if(hf && 'IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ barVis = es[0].isIntersecting; updMbar(); }, {threshold:.2}).observe(hf);
+  }
+
+  // ---------- magnetic buttons (desktop) ----------
+  if(canHover && !reduce){
+    $$('.btn').forEach(function(b){
+      b.addEventListener('mousemove', function(e){
+        var r = b.getBoundingClientRect();
+        b.style.translate = (((e.clientX - r.left) / r.width - .5) * 10).toFixed(1) + 'px ' + (((e.clientY - r.top) / r.height - .5) * 8).toFixed(1) + 'px';
+      });
+      b.addEventListener('mouseleave', function(){ b.style.translate = ''; });
+    });
+  }
+
+  // ---------- parallax on big photos ----------
+  var pics = $$('.pic:not(.sm) .art img'), picVis = [];
+  if(!reduce && 'IntersectionObserver' in window){
+    var pio = new IntersectionObserver(function(es){
+      es.forEach(function(e){ var i = picVis.indexOf(e.target); if(e.isIntersecting && i < 0) picVis.push(e.target); else if(!e.isIntersecting && i >= 0) picVis.splice(i, 1); });
+      picTick();
+    }, {rootMargin:'80px'});
+    pics.forEach(function(im){ pio.observe(im.parentNode.parentNode); });
+    // observe the .pic wrapper, keep the img in the list
+    picVis = [];
+    pics.forEach(function(im){ im.__w = im.closest('.pic'); });
+  }
+  var picRaf = 0;
+  function picTick(){
+    picRaf = 0;
+    var vh = window.innerHeight;
+    pics.forEach(function(im){
+      if(!im.__w || im.__w.offsetParent === null) return;
+      var r = im.__w.getBoundingClientRect();
+      if(r.bottom < -80 || r.top > vh + 80) return;
+      var p = (r.top + r.height / 2 - vh / 2) / vh;
+      im.style.transform = 'translate3d(0,' + (p * -7).toFixed(2) + '%,0)';
+    });
+  }
+  window.addEventListener('scroll', function(){ if(!reduce && !picRaf) picRaf = requestAnimationFrame(picTick); }, {passive:true});
+
+  // ---------- router + page transition ----------
+  var views = $$('.view'), pt = $('#pt'), busy = false, pend = false, first = true, bookIntent = false;
+  var pageOf = {'':'home','/':'home','/apartmani':'apartments','/galerija':'gallery','/o-nama':'about','/kontakt':'contact'};
+  var navPage = {'#/':'home','#/apartmani':'apartments','#/galerija':'gallery','#/o-nama':'about','#/kontakt':'contact'};
+  function parseHash(){
+    var raw = (window.location.hash || '#/').slice(1), qi = raw.indexOf('?');
+    var path = qi >= 0 ? raw.slice(0, qi) : raw, qs = new URLSearchParams(qi >= 0 ? raw.slice(qi + 1) : '');
+    if(path.length > 1 && path.charAt(path.length - 1) === '/') path = path.slice(0, -1);
+    return {page: pageOf[path] || 'home', qs: qs};
+  }
+  function resetView(v){
+    $$('.rv', v).forEach(function(el){ el.classList.remove('in'); if(rvo) rvo.observe(el); else el.classList.add('in'); });
+    $$('.count', v).forEach(function(el){
+      el.__done = false; el.__anim = false;
+      if(!reduce) el.textContent = fmt(0, +el.getAttribute('data-dec') || 0);
+      if(cno) cno.observe(el);
+    });
+  }
+  function route(){
+    var h = parseHash(), qs = h.qs;
+    page = h.page;
+    views.forEach(function(v){
+      var on = v.getAttribute('data-view') === page;
+      if(on){ resetView(v); v.hidden = false; } else v.hidden = true;
+    });
+    $$('nav.main a').forEach(function(a){ if(navPage[a.getAttribute('href')] === page && !a.hasAttribute('data-book')) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
+    if(page === 'contact'){
+      if(qs.get('in')) $('#c_in').value = qs.get('in');
+      if(qs.get('out')) $('#c_out').value = qs.get('out');
+      if(qs.get('g')) $('#c_g').value = qs.get('g');
+      var ap = qs.get('apt');
+      aptKey = (ap === 'a1' || ap === 'a2' || ap === 'a3') ? ap : null;
+      updatePick();
+    }
+    if(page === 'home') heroIntro();
+    if(page !== 'home') barVis = false;
+    updMbar(); closeMenu(); closeLb(); setTitle();
+    window.scrollTo({top:0, left:0, behavior:'instant'}); onScroll();
+  }
+  function focusBook(){
+    var b = $('#heroForm'); if(!b) return;
+    b.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'center'});
+    b.classList.remove('ping'); void b.offsetWidth; b.classList.add('ping');
+    var i = $('#h_in'); if(i && i.focus) try{ i.focus({preventScroll:true}); }catch(e){}
+  }
+  function go(){
+    if(busy){ pend = true; return; }
+    var np = parseHash().page;
+    if(first || reduce || np === page){
+      first = false; route();
+      if(bookIntent){ bookIntent = false; focusBook(); }
+      return;
+    }
+    busy = true;
+    pt.className = 'pt cover';
+    setTimeout(function(){
+      route();
+      pt.className = 'pt reveal';
+      setTimeout(function(){
+        pt.className = 'pt'; busy = false;
+        if(pend){ pend = false; go(); }
+        else if(bookIntent){ bookIntent = false; focusBook(); }
+      }, 560);
+    }, 520);
+  }
+  window.addEventListener('hashchange', go);
+
+  // "Reserve" buttons: go to the booking bar at the top of the home page
+  $$('[data-book]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault(); closeMenu();
+      bookIntent = true;
+      if(page === 'home' && !busy){ bookIntent = false; focusBook(); }
+      else if(window.location.hash === '#/' || window.location.hash === ''){ go(); }
+      else window.location.hash = '#/';
+    });
+  });
+
+  applyLang(lang);
+  go();
+})();
+</script>
+</body>
+</html>
