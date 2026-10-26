@@ -94,7 +94,7 @@ nav.main a[aria-current="page"]{opacity:1;background:rgba(255,255,255,.16)}
   --photo:brightness(.4) saturate(.7) sepia(0) hue-rotate(-10deg);
 }
 .hero[data-time="morning"]{--x:26%;--y:36%;--so:0;--glow:1;--sung:rgba(255,214,150,.65);--photo:brightness(.98) saturate(1.05) sepia(.12) hue-rotate(0deg)}
-.hero[data-time="noon"]{--x:52%;--y:14%;--so:0;--glow:.85;--sung:rgba(255,250,210,.5);--photo:brightness(1.04) saturate(1.15) sepia(0) hue-rotate(0deg)}
+.hero[data-time="noon"]{--photo:brightness(.92) saturate(1.1) contrast(1.03)}
 .hero[data-time="evening"]{--x:76%;--y:44%;--so:.3;--glow:1;--sung:rgba(255,130,70,.7);--photo:brightness(.8) saturate(1.2) sepia(.3) hue-rotate(-8deg)}
 .hero[data-time="night"]{--so:1}
 .hbg{position:absolute;inset:0;z-index:-1;pointer-events:none;will-change:transform}
@@ -134,11 +134,6 @@ nav.main a[aria-current="page"]{opacity:1;background:rgba(255,255,255,.16)}
 .ln>span{display:block;animation:lineUp 1.2s var(--ease) both}
 .ln:nth-child(2)>span{animation-delay:.2s;font-style:italic;font-weight:400;color:var(--gold-2)}
 .hero .sub{font-size:clamp(1.02rem,1.6vw,1.3rem);max-width:42ch;margin-top:22px;color:#eef6f6;animation:fadeUp 1s .6s var(--ease) both;text-shadow:0 1px 14px rgba(0,0,0,.45)}
-.time{position:absolute;z-index:3;top:96px;right:max(var(--gut),calc((100% - 1220px) / 2));display:flex;gap:2px;background:rgba(8,32,42,.55);padding:4px;border-radius:999px;border:1px solid rgba(255,255,255,.14);animation:fadeUp 1s .35s var(--ease) both}
-.time button{all:unset;cursor:pointer;padding:7px 15px;border-radius:999px;font-size:.84rem;font-weight:700;color:#fff;transition:background .3s,color .3s}
-.time button:hover{background:rgba(255,255,255,.18)}
-.time button[aria-pressed="true"]{background:#fff;color:var(--ink)}
-.time button:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
 .badge{position:absolute;z-index:3;right:max(var(--gut),calc((100% - 1220px) / 2));bottom:clamp(120px,14vw,190px);width:clamp(118px,11vw,150px);aspect-ratio:1;color:#fff;animation:fadeIn 1.2s 1s both}
 .badge svg{width:100%;height:100%;animation:spin 26s linear infinite;overflow:visible}
 .badge text{font:700 10.6px var(--body);letter-spacing:.2em;text-transform:uppercase;fill:currentColor}
@@ -442,8 +437,7 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;display
   nav.main a:hover,nav.main a[aria-current="page"]{background:none;color:var(--gold-2);font-style:italic}
   nav.main .navbook{display:block;margin-top:26px;border:0;background:var(--gold);color:#2b1d00;font:700 1.05rem var(--body);text-align:center;border-radius:999px;padding:17px}
   nav.main .navbook:hover{color:#2b1d00;font-style:normal;background:var(--gold)}
-  .time{top:84px}
-  .tl li{grid-template-columns:100px 1fr;}
+    .tl li{grid-template-columns:100px 1fr;}
   .tl li .tile{grid-column:2;max-width:380px}
   .cards{grid-template-columns:1fr 1fr}
   .card:first-child{grid-column:1/-1;grid-row:auto}
@@ -474,8 +468,7 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;display
   .hero{min-height:max(100svh,700px)}
   .hero-in{padding-top:128px;padding-bottom:62px}
   .hero h1{font-size:clamp(2.9rem,14.4vw,4.4rem);max-width:9ch}
-  .time{left:var(--gut);right:auto;top:76px}
-  .scrim{background:linear-gradient(to top,rgba(6,24,32,.94) 0,rgba(6,24,32,.8) 46%,rgba(6,24,32,.45) 72%,rgba(6,24,32,.25) 100%)}
+    .scrim{background:linear-gradient(to top,rgba(6,24,32,.94) 0,rgba(6,24,32,.8) 46%,rgba(6,24,32,.45) 72%,rgba(6,24,32,.25) 100%)}
   .hero{--y:30%}.hero[data-time="morning"]{--x:68%;--y:24%}.hero[data-time="noon"]{--x:50%;--y:14%}.hero[data-time="evening"]{--x:72%;--y:38%}.hero[data-time="night"]{--y:86%}
   .bar{grid-template-columns:1fr 1fr;padding:8px;border-radius:22px;margin-top:26px}
   .bar .field{padding:9px 12px}
@@ -565,23 +558,11 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;display
 </header>
 <main>
 <div class="view" data-view="home">
-<div class="hero grain" id="hero" data-time="night">
+<div class="hero grain" id="hero" data-time="noon">
   <div class="hbg" id="hbg" aria-hidden="true">
   <img class="hphoto" src="https://images.unsplash.com/photo-1758351820489-2a50f375a748?auto=format&fit=crop&w=900&q=75" srcset="https://images.unsplash.com/photo-1758351820489-2a50f375a748?auto=format&fit=crop&w=700&q=75 700w, https://images.unsplash.com/photo-1758351820489-2a50f375a748?auto=format&fit=crop&w=1100&q=75 1100w, https://images.unsplash.com/photo-1758351820489-2a50f375a748?auto=format&fit=crop&w=1600&q=75 1600w, https://images.unsplash.com/photo-1758351820489-2a50f375a748?auto=format&fit=crop&w=2000&q=75 2000w" sizes="100vw" alt="" fetchpriority="high" decoding="async" onerror="this.style.visibility='hidden'">
-  <div class="tint tn"></div><div class="tint tm"></div><div class="tint td"></div><div class="tint te"></div>
-  <div class="lay glowl p" style="--d:.5"><div class="hsun"><i class="halo"></i><i class="srays"></i><i class="core"></i></div></div>
-  <div class="starsw">
-    <div class="lay st st1 p" style="--d:.2"><svg viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice"><circle cx="497" cy="313" r="1.3" fill="#fff"/><circle cx="767" cy="478" r="2.4" fill="#fff"/><circle cx="1291" cy="307" r="1.0" fill="#fff"/><circle cx="1250" cy="16" r="2.4" fill="#fff"/><circle cx="541" cy="292" r="1.3" fill="#fff"/><circle cx="402" cy="519" r="2.4" fill="#fff"/><circle cx="1117" cy="438" r="2.4" fill="#fff"/><circle cx="823" cy="337" r="1.3" fill="#fff"/><circle cx="484" cy="335" r="1.3" fill="#fff"/><circle cx="1081" cy="209" r="1.0" fill="#fff"/><circle cx="1385" cy="407" r="1.0" fill="#fff"/><circle cx="336" cy="398" r="1.0" fill="#fff"/><circle cx="626" cy="409" r="1.0" fill="#fff"/><circle cx="561" cy="252" r="2.4" fill="#fff"/><circle cx="1472" cy="413" r="2.4" fill="#fff"/><circle cx="818" cy="382" r="2.4" fill="#fff"/><circle cx="284" cy="459" r="1.8" fill="#fff"/><circle cx="209" cy="28" r="1.3" fill="#fff"/><circle cx="1023" cy="121" r="1.8" fill="#fff"/><circle cx="1386" cy="233" r="1.8" fill="#fff"/><circle cx="872" cy="269" r="2.4" fill="#fff"/><circle cx="1185" cy="189" r="2.4" fill="#fff"/><circle cx="1206" cy="128" r="1.8" fill="#fff"/><circle cx="1406" cy="478" r="1.0" fill="#fff"/><circle cx="582" cy="517" r="1.3" fill="#fff"/><circle cx="1440" cy="450" r="1.8" fill="#fff"/><circle cx="1119" cy="473" r="1.0" fill="#fff"/><circle cx="1471" cy="345" r="1.3" fill="#fff"/><circle cx="1306" cy="435" r="1.8" fill="#fff"/><circle cx="593" cy="73" r="1.0" fill="#fff"/><circle cx="997" cy="447" r="2.4" fill="#fff"/><circle cx="191" cy="186" r="1.0" fill="#fff"/><circle cx="850" cy="469" r="1.3" fill="#fff"/><circle cx="51" cy="160" r="2.4" fill="#fff"/><circle cx="1584" cy="222" r="1.0" fill="#fff"/><circle cx="100" cy="319" r="1.0" fill="#fff"/><circle cx="783" cy="377" r="1.8" fill="#fff"/><circle cx="1138" cy="461" r="1.8" fill="#fff"/><circle cx="1045" cy="130" r="1.0" fill="#fff"/><circle cx="644" cy="13" r="1.0" fill="#fff"/><circle cx="231" cy="317" r="1.0" fill="#fff"/><circle cx="414" cy="507" r="2.4" fill="#fff"/><circle cx="607" cy="322" r="1.8" fill="#fff"/><circle cx="329" cy="363" r="1.0" fill="#fff"/><circle cx="705" cy="170" r="1.8" fill="#fff"/><circle cx="293" cy="469" r="2.4" fill="#fff"/></svg></div><div class="lay st st2 p" style="--d:.3"><svg viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice"><circle cx="474" cy="199" r="2.4" fill="#fff"/><circle cx="268" cy="108" r="1.0" fill="#fff"/><circle cx="184" cy="80" r="1.3" fill="#fff"/><circle cx="1047" cy="117" r="2.4" fill="#fff"/><circle cx="1324" cy="25" r="2.4" fill="#fff"/><circle cx="1008" cy="242" r="2.4" fill="#fff"/><circle cx="1023" cy="303" r="1.3" fill="#fff"/><circle cx="834" cy="55" r="2.4" fill="#fff"/><circle cx="489" cy="398" r="1.0" fill="#fff"/><circle cx="1445" cy="146" r="2.4" fill="#fff"/><circle cx="981" cy="471" r="2.4" fill="#fff"/><circle cx="1496" cy="68" r="1.8" fill="#fff"/><circle cx="208" cy="517" r="1.0" fill="#fff"/><circle cx="801" cy="327" r="2.4" fill="#fff"/><circle cx="230" cy="348" r="1.0" fill="#fff"/><circle cx="703" cy="130" r="1.0" fill="#fff"/><circle cx="1029" cy="472" r="1.3" fill="#fff"/><circle cx="1200" cy="423" r="1.3" fill="#fff"/><circle cx="1252" cy="42" r="1.0" fill="#fff"/><circle cx="1010" cy="369" r="1.3" fill="#fff"/><circle cx="313" cy="494" r="2.4" fill="#fff"/><circle cx="1502" cy="309" r="2.4" fill="#fff"/><circle cx="595" cy="295" r="1.8" fill="#fff"/><circle cx="882" cy="79" r="1.3" fill="#fff"/><circle cx="1575" cy="317" r="1.0" fill="#fff"/><circle cx="1099" cy="363" r="1.8" fill="#fff"/><circle cx="1447" cy="192" r="2.4" fill="#fff"/><circle cx="1041" cy="329" r="1.3" fill="#fff"/><circle cx="642" cy="86" r="1.8" fill="#fff"/><circle cx="1092" cy="155" r="1.0" fill="#fff"/><circle cx="1049" cy="477" r="1.3" fill="#fff"/><circle cx="714" cy="134" r="1.0" fill="#fff"/><circle cx="615" cy="185" r="1.3" fill="#fff"/><circle cx="556" cy="27" r="2.4" fill="#fff"/><circle cx="531" cy="202" r="1.8" fill="#fff"/><circle cx="1454" cy="466" r="2.4" fill="#fff"/><circle cx="368" cy="346" r="2.4" fill="#fff"/><circle cx="248" cy="95" r="1.0" fill="#fff"/><circle cx="423" cy="508" r="1.3" fill="#fff"/><circle cx="624" cy="69" r="1.0" fill="#fff"/><circle cx="1575" cy="204" r="1.8" fill="#fff"/><circle cx="358" cy="301" r="2.4" fill="#fff"/><circle cx="484" cy="81" r="2.4" fill="#fff"/><circle cx="1165" cy="238" r="2.4" fill="#fff"/><circle cx="865" cy="51" r="1.0" fill="#fff"/><circle cx="601" cy="377" r="1.0" fill="#fff"/></svg></div>
-    <i class="hshoot"></i>
-  </div>
 </div>
   <div class="scrim"></div>
-  <div class="time" role="group" aria-label="Time of day">
-    <button type="button" data-time="morning" aria-pressed="false" data-i18n="t_morning">Morning</button>
-    <button type="button" data-time="noon" aria-pressed="false" data-i18n="t_noon">Midday</button>
-    <button type="button" data-time="evening" aria-pressed="false" data-i18n="t_evening">Evening</button>
-    <button type="button" data-time="night" aria-pressed="true" data-i18n="t_night">Night</button>
-  </div>
   <div class="wrap hero-in">
     <h1 data-i18n-html="h1"><span class="ln"><span>Rumija above.</span></span><span class="ln"><span>The Adriatic below.</span></span></h1>
     <p class="sub" data-i18n="sub">Apartments Blago in Sutomore: a garden for the first coffee, the city beach 1.1 km away.</p>
@@ -917,15 +898,11 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;display
   function setTime(t){
     if(!hero) return;
     hero.setAttribute('data-time', t);
-    $$('.time button').forEach(function(x){ x.setAttribute('aria-pressed', String(x.getAttribute('data-time') === t)); });
   }
   function heroIntro(){
     clearTimeout(introT);
-    setTime('night');
-    introT = setTimeout(function(){ setTime('morning'); }, reduce ? 0 : 750);
   }
   if(hero){
-    $$('.time button').forEach(function(b){ b.addEventListener('click', function(){ clearTimeout(introT); setTime(b.getAttribute('data-time')); }); });
     if(canHover && !reduce){
       var raf = 0, nx = 0, ny = 0;
       hero.addEventListener('mousemove', function(e){
