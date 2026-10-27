@@ -531,6 +531,45 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;display
   .card,.apt,.rc,.tile{box-shadow:0 6px 18px rgba(8,32,42,.10)!important}
   .gal .it img,.gal a img{transition:none}
 }
+
+/* ============ phone fit: no sideways overflow, header, spacing, bottom bar ============ */
+html{overflow-x:hidden}
+html,body{overflow-x:clip}
+.view{overflow-x:hidden}
+@supports (overflow:clip){.view{overflow-x:clip}}
+@media(max-width:1000px){.js .rv.l,.js .rv.r{translate:0 38px}.js .rv.in{translate:none}}
+@media(max-width:760px){
+  .mbar{box-sizing:border-box;width:auto;max-width:calc(100vw - 24px);padding:6px;gap:8px;bottom:max(10px,env(safe-area-inset-bottom))}
+  .mbar .btn{padding:11px 8px;font-size:.9rem;min-width:0;white-space:nowrap}
+  .mbar .btn.wa{padding:11px 16px}
+  .mbar.scr{transform:translateY(160%);opacity:0;pointer-events:none}
+  footer{padding-bottom:86px}
+  /* room to breathe on About + Contact */
+  .view section{padding-block:68px}
+  .split{gap:34px}
+  .split .txt p{font-size:1.04rem;line-height:1.72}
+  .split .txt h2{margin-bottom:20px}
+  .tl li{padding-bottom:44px}
+  .tl p,.rc p{line-height:1.68}
+  .rcs{gap:20px}
+  .cgrid{gap:40px}
+  .details{gap:26px;margin-top:28px}
+  .details dd{margin-top:6px}
+  .details a{font-size:clamp(1.2rem,5.7vw,1.55rem);overflow-wrap:anywhere;line-height:1.25;display:inline-block;max-width:100%}
+  .side-art{margin-top:30px;max-width:none}
+  .form{padding:24px 20px;gap:24px}
+  .form .acts{gap:12px}
+  .form .btn{flex:1 1 100%}
+  .map{margin-inline:12px}
+}
+@media(max-width:430px){
+  .top .wrap{gap:8px}
+  .brand{font-size:1.5rem;gap:8px}
+  .brand small{display:none}
+  .lang button{padding:6px 10px}
+  .menu-btn{width:44px;height:44px}
+  .menu-btn span:nth-child(1){top:17px}.menu-btn span:nth-child(2){top:25px}
+}
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
@@ -919,11 +958,13 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;display
 
   // ---------- scroll: progress bar, header, hero depth ----------
   var lite = window.matchMedia && window.matchMedia('(max-width:860px),(hover:none)').matches;
-  var hdr = $('header.top'), prog = $('#prog'), ticking = false;
+  var hdr = $('header.top'), prog = $('#prog'), ticking = false, lastY = 0, mbar = $('#mbar');
   function onScroll(){
     ticking = false;
     var y = window.scrollY || 0, h = document.documentElement.scrollHeight - window.innerHeight;
     if(hdr) hdr.classList.toggle('s', y > 30);
+    if(mbar){ mbar.classList.toggle('scr', y > lastY + 6 && y > 200); if(y < lastY - 6 || y <= 200) mbar.classList.remove('scr'); }
+    lastY = y;
     if(prog) prog.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, y / h) : 0).toFixed(4) + ')';
     if(hbg && page === 'home' && !reduce && !lite && y < 1000) hbg.style.transform = 'translate3d(0,' + (y * .22).toFixed(1) + 'px,0)';
   }
@@ -1039,8 +1080,8 @@ footer .fine{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;display
   lb.addEventListener('touchend', function(e){ var dx = e.changedTouches[0].clientX - tx; if(Math.abs(dx) > 50) showImg(cur + (dx < 0 ? 1 : -1)); }, {passive:true});
 
   // ---------- mobile action bar ----------
-  var mbar = $('#mbar'), barVis = false;
-  function updMbar(){ if(mbar) mbar.classList.toggle('off', page === 'home' && barVis); }
+  var barVis = false;
+  function updMbar(){ if(mbar) mbar.classList.toggle('off', (page === 'home' && barVis) || page === 'contact'); }
   if(hf && 'IntersectionObserver' in window){
     new IntersectionObserver(function(es){ barVis = es[0].isIntersecting; updMbar(); }, {threshold:.2}).observe(hf);
   }
